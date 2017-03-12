@@ -1,0 +1,54 @@
+body h1, body h2, body h3, body h4, body h5, body h6 {
+	text-align: center;
+	font-family:Roboto;
+ 	color:#4E443C;
+ 	font-variant: small-caps; 
+ 	text-transform: none; 
+ 	font-weight: 100; 
+ 	margin-bottom: 2%;
+ 
+}
+
+nav {
+  text-align: center;
+  font-family:Roboto;
+  color:#4E443C;
+  font-variant: small-caps; 
+  text-transform: none; 
+  font-weight: 125; 
+}
+
+img {
+  height: 100%;
+  line-height: 100%;
+  margin-top: 15%;  
+  margin-left: 15%;  
+}
+
+.footer-text {
+  height: 100%;
+  line-height: 100%;
+  text-align: center;
+}
+
+.footer-text a {
+	color: #bdbdbd;
+}
+
+.links {
+    text-align: right;
+}
+
+.links a {
+  color: white;
+  display: inline-block;
+  height: 100%;
+  line-height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    text-align: center;
+  }
+  
+}
