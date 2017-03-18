@@ -1,188 +1,322 @@
-<!DOCTYPE html>
-  <html>
-    <head>
-      <title>NITK Surathkal</title>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <title>NITK Surathkal</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+  <link rel="stylesheet" href="layout/styles/layout.css" type="text/css" />
+  <script type="text/javascript" src="layout/scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="layout/scripts/jquery.slidepanel.setup.js"></script>
+  <script type="text/javascript" src="layout/scripts/jquery.ui.min.js"></script>
+  <script type="text/javascript" src="layout/scripts/jquery.tabs.setup.js"></script>
+</head>
 
-      <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      
-      <!--Meta tags-->
-      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-      <meta name="keywords" content="Salman Shah, Intern, Data Science, Machine Learning">
-      <meta name="author" content="Salman Shah">
-      <meta http-equiv="Content-Type" content="text/html, charset=UTF-8" />
-
-      <!--CSS Files-->
-      <link rel="shortcut icon" href="favicon.ico">
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel="stylesheet" href="css/stylesheet.css">
-
-      <!--JavaScript files-->
-      <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous">
-      </script>
-
-      <!-- <script src="js/jQuery-1.8.2.js"> </script> -->
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
-
-      <script type="text/javascript" src="js/home.js"></script>
-      
-    </head>
-
-    <body>
-
-      <div id="header">
-        <div class="row">
-          <div class="col s12 m1 l1">
-            <img src="images/logo_nitk.png" class="responsive-img">
-          </div>
-          <div class="col s12 m8 l8">
-            <h5 style="text-align:left;">NATIONAL INSTITUTE OF TECHNOLOGY, KARNATAKA - SURATHKAL</h5>
-            <h5 style="text-align:left;">नेशनल इंस्टीट्यूट ऑफ टैक्नोलॉजी कर्नाटक ूरतकल</h5>
-          </div>
+<body>
+  <div class="wrapper col0">
+    <div id="topbar">
+      <div id="slidepanel">
+        <div class="topbox">
+          <h2>Nullamlacus dui ipsum</h2>
+          <p>Nullamlacus dui ipsum conseque loborttis non euisque morbi penas dapibulum orna. Urnaultrices quis curabitur phasellentesque congue magnis vestibulum quismodo nulla et feugiat. Adipisciniapellentum leo ut consequam ris felit elit id nibh sociis malesuada.</p>
+          <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
         </div>
-        <nav>
-          <div class="nav-wrapper blue darken-4">
-            <ul class="left hide-on-med-and-down">
-              <li id="first"><a href="index.html">Home</a></li>
-              <li id="second"><a href="#!">Institute</a></li>
-              <li id="third"><a href="#!">Academics</a></li>
-              <li id="fourth"><a href="#!">Admissions</a></li>
-              <li id="fifth"><a href="#!">Departments</a></li>
-              <li id="sixth"><a href="#!">Faculty</a></li>
-              <li id="seventh"><a href="#!">Students</a></li>
-            </ul>
-          </div>
-        </nav>
+        <div class="topbox">
+          <h2>Teachers Login Here</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Teachers Login Form</legend>
+              <label for="teachername">Username:
+                <input type="text" name="teachername" id="teachername" value="" />
+              </label>
+              <label for="teacherpass">Password:
+                <input type="password" name="teacherpass" id="teacherpass" value="" />
+              </label>
+              <label for="teacherremember">
+                <input class="checkbox" type="checkbox" name="teacherremember" id="teacherremember" checked="checked" />
+                Remember me</label>
+              <p>
+                <input type="submit" name="teacherlogin" id="teacherlogin" value="Login" />
+                &nbsp;
+                <input type="reset" name="teacherreset" id="teacherreset" value="Reset" />
+              </p>
+            </fieldset>
+          </form>
+        </div>
+        <div class="topbox last">
+          <h2>Pupils Login Here</h2>
+          <form action="#" method="post">
+            <fieldset>
+              <legend>Pupils Login Form</legend>
+              <label for="pupilname">Username:
+                <input type="text" name="pupilname" id="pupilname" value="" />
+              </label>
+              <label for="pupilpass">Password:
+                <input type="password" name="pupilpass" id="pupilpass" value="" />
+              </label>
+              <label for="pupilremember">
+                <input class="checkbox" type="checkbox" name="pupilremember" id="pupilremember" checked="checked" />
+                Remember me</label>
+              <p>
+                <input type="submit" name="pupillogin" id="pupillogin" value="Login" />
+                &nbsp;
+                <input type="reset" name="pupilreset" id="pupilreset" value="Reset" />
+              </p>
+            </fieldset>
+          </form>
+        </div>
+        <br class="clear" />
       </div>
+      <div id="loginpanel">
+        <ul>
+          <li class="left">Log In Here &raquo;</li>
+          <li class="right" id="toggle"><a id="slideit" href="#slidepanel">Administration</a><a id="closeit" style="display: none;" href="#slidepanel">Close Panel</a></li>
+        </ul>
+      </div>
+      <br class="clear" />
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col1">
+    <div id="header">
+      <div id="logo">
+        <p><h2>
+  	  <a href="index.html">
+  National Institute of Technology Karnataka, Surathkal
+   </a></h2></p></br>
 
-
-      <div class="row blue darken-4 slider-container">
-
-        <div class="col s8">
-          <div class="slider">
-            <ul class="slides">
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
-                <div class="caption center-align">
-                </div>
-              </li>
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-                <div class="caption left-align">
-                </div>
-              </li>
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-                <div class="caption right-align">
-                </div>
-              </li>
-              <li>
-                <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-                <div class="caption center-align">
-                </div>
-              </li>
-            </ul>
+        
+      </div>
+      <div class="fl_right">
+        <ul>
+          <li class="last"><a href="#">Virtual Tour</a></li>
+          <li><a href="#">Institute Telephone Directory</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <p></p>
+      </div>
+      <br class="clear" />
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col2">
+    <div id="topnav">
+      <ul>
+        
+            <li><a href="#"><strong>Home</a></li>
+            <li><a href="#">Academic</a></li>
+            <li><a href="#">Department</a></li>
+  		   <li><a href="#">Faculty</a></li>
+  		    <li><a href="#">Student</a></li>
+  			 <li><a href="#">Research</a></li>
+  			  <li><a href="#">Placements</a></li>
+  			   
+            <li class="last"><a href="#">Central Faclities</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/style-demo.html">Style Demo</a>
+          <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Suspendisse in neque</a></li>
+            <li class="last"><a href="#">Praesent et eros</a></li>
+          </ul>
+        </li>
+        <li><a href="pages/full-width.html">Full Width</a>
+          <ul>
+            <li><a href="#">Lorem ipsum dolor</a></li>
+            <li><a href="#">Suspendisse in neque</a></li>
+            <li class="last"><a href="#">Praesent et eros</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Our Services</a></li>
+        <li class="last"><a href="#">Long Link Text</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col3">
+    <div id="featured_slide">
+      <div id="featured_wrap">
+        <ul id="featured_tabs">
+          <li><a href="#fc1">NITK Surathkal Beach<br />
+            
+          <li><a href="#fc2">14 The Annual convocation <br />
+          <li><a href="#fc3">Independence Day Celebrtion<br />
+            <span>Institution Wifi inugration</span></a></li>
+          <li class="last"><a href="#fc4">Wifi Inugration<br />
+            
+        </ul>
+        <div id="featured_content">
+          <div class="featured_box" id="fc1"><img src="images/demo/1.jpg" alt="" />
+            <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
           </div>
-        </div>
-
-        <div class="col s4" style="margin-top:0;">
-          <div class="card row">
-            <div class="card-content col" style="width:100%; height: 190px; overflow-y: scroll;">
-              <h4>Announcements</h4>
-              <ul>
-                <li><a href="!#">Summer Internship Programme-2017</a></li><br>
-                <li><a href="!#">JRF position in Chemistry dept</a></li><br>
-                <li><a href="!#">MBA Admissions - 2017-19</a></li><br>
-                <li><a href="!#">VideoConferencing with the President of India</a></li><br>
-                <li><a href="!#">ONLINE COURSE REGISTRATION</a></li><br>
-                <li><a href="!#">Results December 2016</a></li><br>
-              </ul>
-            </div>
+          <div class="featured_box" id="fc2"><img src="images/demo/2.gif" alt="" />
+            <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
           </div>
-          <div class="card row">
-              <div class="card-content col" style="width:100%; height: 190px; overflow-y: scroll;">
-                <h4>News</h4>
-                <ul>
-                  <li><a href="!#">Prof. V.R. Sastry, Professor of Mining Engineering, NITK – Surathkal, received LUMINARY IN MINING EDUCATION IN INDIA Award from CSIR- CIMFR</a></li><br>
-                  <li><a href="!#">Hem Maradia and Rahul Varma have won the First prize in the Science Quiz Competition at National Science Day 2017 at Pilikula Regional Science Centre, Mangalore</a></li><br>
-                  <li><a href="!#">Best paper awarded to Sandhya Shetty at the International conference on Green Chemistry and Nanotechnology Opportunities and Challenges 2017 held at Aloysius College, Mangalore during February 27 &amp; 28, 2017</a></li><br>
-                </ul>
-              </div>
-            </div>
+          <div class="featured_box" id="fc3"><img src="images/demo/3.gif" alt="" />
+            <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
+          </div>
+          <div class="featured_box" id="fc4"><img src="images/demo/4.gif" alt="" />
+            <div class="floater"><a href="#">Continue Reading &raquo;</a></div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col4">
+    <div id="container">
+      <div id="hpage">
+        <ul>
+          <li>
+            <h2>Announcements</h2>
+  		  
+            <div class="imgholder"><a href="#"><img src="images/demo/200x140.gif" alt="" /></a></div>
+  		   <ul>
+         
+            <li><a href="#"><strong>Link1 
+  </a></li>
+            <li><a href="#">Link2
+  </a></li>
+            <li><a href="#">Link3
+  </a></li>
+  		   <li><a href="#">Link3
+  </a></li>
+  		    <li><a href="#">link4</a></li>
+  			 <li><a href="#">link5</a></li>
+  			 
+  		            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+          </li>
 
-      <main>
-      
-        <div class="container" style="margin-top: -8%;">
-          <div class="card">
-            <div class="card-content">
-              <h4>Upcoming Events</h4>
-              <ul>
-                <li>
-                  <i class="material-icons" style="position: relative; top: 15px;">today</i>
-                  <b>Three day workshop on "Laser Processing of Materials"</b><br>
-                  <div class="grey-text" style="padding-left: 30px"> March 9, 2017 to March 11, 2017
-                </li>
-                <li>
-                  <i class="material-icons" style="position: relative; top: 15px;">today</i>
-                  <b>Two day Workshop on Machines and Mechanisms</b><br>
-                  <div class="grey-text" style="padding-left: 30px"> March 9, 2017 to March 11, 2017
-                </li>
-                <li>
-                  <i class="material-icons" style="position: relative; top: 15px;">today</i>
-                  <b>Two-day workshop on Advances in Stress Analysis and Dynamics</b><br>
-                  <div class="grey-text" style="padding-left: 30px"> March 9, 2017 to March 11, 2017
-                </li>
-                <li>
-                  <i class="material-icons" style="position: relative; top: 15px;">today</i>
-                  <b>All India Inter NIT Sports. 17th to 19th March 2017</b><br>
-                  <div class="grey-text" style="padding-left: 30px"> March 9, 2017 to March 11, 2017
-                </li>
-            </div>
-          </div>
-        </div>
+          </ul>
+          <li>
+            <h2>Latest News</h2>
+  		  
+            <div class="imgholder"><a href="#"><img src="images/demo/200x140.gif" alt="" /></a></div>
+            <p> <ul>
+         
+            <li><a href="#"><strong>Link1 
+  </a></li>
+            <li><a href="#">Link2
+  </a></li>
+            <li><a href="#">Link3
+  </a></li>
+  		   <li><a href="#">Link3
+  </a></li>
+  		    <li><a href="#">link4</a></li>
+  			 <li><a href="#">link5</a></li>
+  			  
+  		            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+          </li>
 
-        <div class="container">
-          <div class="card">
-            <div class="card-content">
+          </ul></p>
+            
+          </li>
+          <li>
+            <h2>Upcoming Events</h2>
+            <div class="imgholder"><a href="#"><img src="images/demo/200x140.gif" alt="" /></a></div>
+            <p> <ul>
+         
+            <li><a href="#"><strong>Link1 
+  </a></li>
+            <li><a href="#">Link2
+  </a></li>
+            <li><a href="#">Link3
+  </a></li>
+  		   <li><a href="#">Link3
+  </a></li>
+  		    <li><a href="#">link4</a></li>
+  			 <li><a href="#">link5</a></li>
+  			 
+  		            <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+          </li>
 
-              <div class="slider">
-                <ul class="slides">
-                  <li>
-                    <img src="http://lorempixel.com/580/250/nature/1"> <!-- random image -->
-                    <div class="caption center-align">
-                    </div>
-                  </li>
-                  <li>
-                    <img src="http://lorempixel.com/580/250/nature/2"> <!-- random image -->
-                    <div class="caption left-align">
-                    </div>
-                  </li>
-                  <li>
-                    <img src="http://lorempixel.com/580/250/nature/3"> <!-- random image -->
-                    <div class="caption right-align">
-                    </div>
-                  </li>
-                  <li>
-                    <img src="http://lorempixel.com/580/250/nature/4"> <!-- random image -->
-                    <div class="caption center-align">
-                    </div>
-                  </li>
-                </ul>
-              </div>
+          </ul></p>
+            
+          </li>
+          <li class="last">
+            <h2>Tenders</h2>
+            <div class="imgholder"><a href="#"><img src="images/demo/200x140.gif" alt="" /></a></div>
+            <p> <ul>
+         
+            <li><a href="#"><center>Link1</center>
+  </a></li>
+            <li><a href="#"><center>Link2</center>
+  </a></li>
+            <li><a href="#"><center>Link3</center>
+  </a></li>
+  		   <li><a href="#"><center>Link4</center>
+  </a></li>
+  		    
+  			 <li><a href="#"><center>Link5</center></a></li>
+  			  
+  			 <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
 
-            </div>
-          </div>
-      
-        </div>
-
-      </main>
-
-      <div id="footer">
+          </ul></p>
+          </li>
+        </ul>
+        <br class="clear" />
       </div>
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col5">
+    <div id="footer">
+      <div id="newsletter">
+        <h2>INSTITUTION</h2>
+        <ul>
+          <li><a href="#">General Information</a></li>
+          <li><a href="#">Administration</a></li>
+          <li><a href="#">History</a></li>
+  		        <li><a href="#">SC/ST Cell</a></li>
 
-    </body>
-  </html>
+                  <li><a href="#">RTI</a></li>
+  				
+
+          <li class="last"><a href="#">Results</a></li>
+        </ul>
+      </div>
+      <div class="footbox">
+        <h2> LINKAGE</h2>
+        <ul>
+          <li><a href="#">Industry Linkage</a></li>
+          <li><a href="#">Institute Linkage</a></li>
+          <li><a href="#">Other Linkage</a></li>
+          
+          <li class="last"><a href="#">MOU Details</a></li>
+        </ul>
+      </div>
+      <div class="footbox">
+        <h2>ABOUT</h2>
+        <ul>
+          <li><a href="#">Vision and Mission</a></li>
+          <li><a href="#">IPR Policy</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">A-Z Links</a></li>
+  		        <li><a href="#">Publications</a></li>
+
+          <li class="last"><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="footbox">
+        <h2>OTHER LINKS</h2>
+        <ul>
+          <li><a href="#">Online Competions</a></li>
+          <li><a href="#">Vigilance</a></li>
+          <li><a href="#">Committee against Sexual</a></li>
+          <li><a href="#">Harassments</a></li>
+  		        <li><a href="#">Procurements</a></li>
+
+          <li class="last"><a href="#">Online Fee Payment</a></li>
+        </ul>
+      </div>
+      <br class="clear" />
+    </div>
+  </div>
+  <!-- ####################################################################################################### -->
+  <div class="wrapper col6">
+    <div id="copyright">
+      <p class="fl_left">Copyright - All Rights Reserved </a></p>
+      <br class="clear" />
+    </div>
+  </div>
+</body>
+</html>
