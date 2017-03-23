@@ -1,380 +1,268 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <link rel="icon" href="favicon.ico">
 
-        <title>NITK Surathkal</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <!-- Bootstrap core CSS -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico">
 
+	<title>NITK Surathkal</title>
 
-        <!-- Custom styles for this template -->
-        <link href="navbar-fixed-top.css" rel="stylesheet">
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="navbar-fixed-top.css" rel="stylesheet">
 
-        <style>
-            .drop-down{
-                background: white;
-                margin: 30px;
-                padding: 10 30 10 30;
-                border-radius: 5px;
-                width: 200px;
-            }
-            .jumbotron{
-                background: white;
-            }
-            .profile-logo{
-                height:100px;
-                float:left;
-                border-radius:50%;
-            }
-            .widget-list{
-                padding:0px;
-            }
-            .widget-list li{
-                padding: 5 10 5 20;
-                list-style:none;
-                border-bottom: 1px solid #f0f0f0;
-            }
-            .widget-list li:hover {
-                background: #f1f1f1;
-                cursor:pointer;
-                border-radius:5px;
-            }
-            .no-border li{
-                border: none !important;
-            }
-            .small-font{
-                font-size:15px !important;
-            }
-            .material-box{
-                box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-            }
+</head>
 
-            .material-box2{
-                box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
-            }
-            .row-footer{
-                background-color:#48282F;
-                margin:0px auto;
-                padding: 20px 0px 20px 0px;
-                list-style-type: none;
-            }
-            .row-footer .ul-li{
-              list-style-type: none;
-            }
-            .navbar-inverse {
-                 background:#48282F!important;
-                 border-radius: 0px!important;
-                 border: none!important;
-            }
-            .navbar-inverse a{
-                 color: #EEEEEE!important;
-            }
+<body style="background:#F8F7DF;">
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-inverse hidden-xs" style="background-color:#F8F7DF;padding:10px;">
+			<div class="row">
+				<span class="col-lg-2 col-md-2 col-sm-3" style="margin-right:-50px;margin-top:5px;margin-left:20px">
+					<img class="img-reponsive" src="img/logo.png" width="70%" height="16%" alt="">
+				</span>
+				<span class="col-lg-6 col-md-7 col-sm-9" style="padding:0px;color:#E0E0E0;">
+					<h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F">प्रौद्योगिकी कर्नाटक, सूरतकल नेशनल इंस्टीट्यूट್</h3>
+					<h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F">National Institute of Technology Karnataka, Surathkal</h3>
+					<h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F">ನ್ಯಾಷನಲ್ ಇನ್ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಟೆಕ್ನಾಲಜಿ ಕರ್ನಾಟಕ, ಸುರತ್ಕಲ್</h3>
+				</span>
+				<div class="col-lg-4 col-md-3 hidden-sm" style="color:white;line-height:15px;text-align:right;">
+					<form class="navbar-form" role="search" style="padding:0px;">
+						<div class="input-group add-on">
+							<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default" style="padding:9px;background-color:#48282F" type="submit"><i class="glyphicon glyphicon-search" style="color:white;"></i></button>
+							</div>
+						</div>
+					</form>
+					<p style="color:#8B785F">Virtual Tour</p>
+					<p style="color:#8B785F">Institute telphone Directory</p>
+					<p style="color:#8B785F">Contact</p>
+				</div>
+			</div>
+			<div class="hidden-lg" style="margin-bottom:10px;"></div>
+		</div>
+		<div class="container-fluid">
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:white;">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" style="font-size: 20px;">
+					<span class="visible-xs" style="display:inline">
+						<img style="max-width:100px; margin-top: -12px;" src="img/logo10.png" height="45px">
+					</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Academics<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					<li><a href="#">Addmisions</a></li>
+					<li><a href="#">Department</a></li>
+					<li><a href="#">Faculty</a></li>
+					<li><a href="#">Student</a></li>
+					<li><a href="#">Research</a></li>
+					<li><a href="#">Placement</a></li>
+					<li><a href="#">Central Facilities</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
 
-            .navbar-inverse .navbar-nav li:hover{
-                background-color: #212121;
-            }
+	<div class="container" style="margin-top:20px" >
 
-            .navbar-fixed-top {
-                min-height: 60px!important;
-            }
+		<div class="container" style="background-color:rgb(229, 226, 201);padding:15px;">
+			<div class="row">
+				<div class="col-lg-12 carousel">
+					<div id="mycarousel" class="carousel slide carousel-box" data-ride="carousel" style="margin-bottom:10px;">
+						<!-- Indicators -->
+						<ol class="carousel-indicators">
+							<li data-target="#mycarousel" data-slide-to="0" class="active"></li>
+							<li data-target="#mycarousel" data-slide-to="1"></li>
+							<li data-target="#mycarousel" data-slide-to="2"></li>
+						</ol>
 
-            .navbar-nav > li > a {
-                padding-top: 0px!important;
-                padding-bottom: 0px!important;
-                line-height: 60px!important;
-            }
-            .text-col{
-              color: white;
-              font-family:times;
-              font-size: 16px;
-            }
-            .nopadding{
-              padding: 0px;
-            }
-            ul, menu, dir {
-                -webkit-padding-start: 0px;
-            }
-            .text-gray74{
-            	color:#E5E2C9;
-              text-decoration: none;
-            }
-            a { 
-              color: #8B785F;
-              text-decoration: none!important;
-            } 
-            a:hover{ 
-              color: #48282F;
-              text-decoration: none!important;
-            } 
-            @media (max-width: 767px) {
-              .carousel{
-                padding: 0px;
-                margin: -35px -8px -20px -8px;
-              }
-              
-          }
-        </style>
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-          <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-      </head>
-      <body style="background:#F8F7DF;">
-        <!-- Fixed navbar -->
-        <nav class="navbar navbar-inverse">
-          <div class="container-inverse hidden-xs" style="background-color:#F8F7DF;padding:10px;">
-            <div class="row">
-              <span class="col-lg-2 col-md-2 col-sm-3" style="margin-right:-50px;margin-top:5px;margin-left:20px">
-                <img class="img-reponsive" src="img/logo.png" width="70%" height="16%" alt="">
-              </span>
-              <span class="col-lg-6 col-md-7 col-sm-9" style="padding:0px;color:#E0E0E0;">
-                <h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F">प्रौद्योगिकी कर्नाटक, सूरतकल नेशनल इंस्टीट्यूट್</h3>
-                <h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F">National Institute of Technology Karnataka, Surathkal</h3>
-                <h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F">ನ್ಯಾಷನಲ್ ಇನ್ಸ್ಟಿಟ್ಯೂಟ್ ಆಫ್ ಟೆಕ್ನಾಲಜಿ ಕರ್ನಾಟಕ, ಸುರತ್ಕಲ್</h3>
-              </span>
-              <div class="col-lg-4 col-md-3 hidden-sm" style="color:white;line-height:15px;text-align:right;">
-                <form class="navbar-form" role="search" style="padding:0px;">
-                  <div class="input-group add-on">
-                    <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
-                    <div class="input-group-btn">
-                      <button class="btn btn-default" style="padding:9px;background-color:#48282F" type="submit"><i class="glyphicon glyphicon-search" style="color:white;"></i></button>
-                    </div>
-                  </div>
-                </form>
-                <p style="color:#8B785F">Virtual Tour</p>
-                <p style="color:#8B785F">Institute telphone Directory</p>
-                <p style="color:#8B785F">Contact</p>
-              </div>
-            </div>
-            <div class="hidden-lg" style="margin-bottom:10px;"></div>
-          </div>
-          <div class="container-fluid">
-            <div class="navbar-header ">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:white;">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#" style="font-size: 20px;">
-              <span class="visible-xs" style="display:inline">
-                <img style="max-width:100px; margin-top: -12px;" src="img/logo10.png" height="45px">
-              </span>
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="myNavbar">
-              <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Academics<span class="caret"></span></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Sub Page 1</a></li>
-                    <li><a href="#">Sub Page 2</a></li>
-                  </ul>
-                </li>
-                <li><a href="#">Addmisions</a></li>
-                <li><a href="#">Department</a></li>
-                <li><a href="#">Faculty</a></li>
-                <li><a href="#">Student</a></li>
-                <li><a href="#">Research</a></li>
-                <li><a href="#">Placement</a></li>
-                <li><a href="#">Central Facilities</a></li>
-              </ul>
-            </div>
-          </div>
-        </nav>
+						<!-- Wrapper for slides-->
+						<div class="carousel-inner" role="listbox">
+							<div class="item active">
+								<img class="img-reponsive" src="img/slide1.jpg" alt="Weekend Grand Buffet" width="100%" height="100%">
+								<div class="carousel-caption">
+									<h2></h2>
+									<p></p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-reponsive" src="img/slide1.jpg" alt="Weekend Grand Buffet" width="100%" height="100%">
+								<div class="carousel-caption">
+									<h2></h2>
+									<p></p>
+								</div>
+							</div>
+							<div class="item">
+								<img class="img-reponsive" src="img/slide1.jpg" alt="Weekend Grand Buffet" width="100%" height="100%">
+								<div class="carousel-caption">
+									<h2></h2>
+									<p></p>
+								</div>
+							</div>
 
-        <div class="container" style="margin-top:20px" >
+							<!--Controls-->
+							<a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+							<div class="btn-group" id="carouselButtons"></div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<hr class="visible-xs">
+					<div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px;background-color:">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
+								<p style="color:#eeeeee;font-size:25px;padding-top:5px;">Announcements</p>
+							</div>
+							<div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
+								<p><a href="">Advertisement for the post of JRF in Computer Science and Engg. dept.</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">MBA Admissions - 2017-19</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">RECRUITMENT FOR OFFICER CADRE POSITIONS</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">Advertisement for the post of JRF in Computer Science and Engg. dept.</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">MBA Admissions - 2017-19</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">RECRUITMENT FOR OFFICER CADRE POSITIONS</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<hr class="visible-xs">
+					<div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px;background-color:">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
+								<p style="color:#eeeeee;font-size:25px;padding-top:5px;">Latest News</p>
+							</div>
+							<div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
+								<p><a href="">Second place awarded to B.Tech Final Year Students (Chemical Engg.) in poster presentation at CHEMTECH World Expo2017 in Mumbai</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">Rahul Varma (13MN26) and Hem Maradia (13CO230)​ of final year B.TECH(CSE) ​ won the first place in Tata Crucible Campus Quiz (Business Quiz) representing NITK Surathkal</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">RECRUITMENT FOR OFFICER CADRE POSITIONS</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">VideoConferencing with the President of India</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-4">
+					<hr class="visible-xs">
+					<div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
+								<p style="color:#eeeeee;font-size:25px;padding-top:5px;">Upcoming Events</p>
+							</div>
+							<div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
+								<p><a href="">One day workshop on "Simulation of Manuacturing Processes"</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">All India Inter NIT Sports. 17th to 19th March 2017</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">INTERNATIONAL SUMMER UNIVERSITY 2017 Organised by the SCHOOL OF MANAGEMENT, NITK, IN COLLABORATION WITH HEIG-VD, From UNIVERSI</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">VideoConferencing with the President of India</a></p>
+								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
+								<p><a href="">VideoConferencing with the President of India</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr class="visible-xs">
 
-          <div class="container" style="background-color:rgb(229, 226, 201);padding:15px;">
-            <div class="row">
-              <div class="col-lg-12 carousel">
-                    <div id="mycarousel" class="carousel slide carousel-box" data-ride="carousel" style="margin-bottom:10px;">
-                        <!-- Indicators -->
-                        <ol class="carousel-indicators">
-                            <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-                            <li data-target="#mycarousel" data-slide-to="1"></li>
-                            <li data-target="#mycarousel" data-slide-to="2"></li>
-                        </ol>
+</div>
+</div>
 
-                        <!-- Wrapper for slides-->
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img class="img-reponsive" src="img/slide1.jpg" alt="Weekend Grand Buffet" width="100%" height="100%">
-                                <div class="carousel-caption">
-                                    <h2></h2>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="img-reponsive" src="img/slide1.jpg" alt="Weekend Grand Buffet" width="100%" height="100%">
-                                <div class="carousel-caption">
-                                    <h2></h2>
-                                    <p></p>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <img class="img-reponsive" src="img/slide1.jpg" alt="Weekend Grand Buffet" width="100%" height="100%">
-                                <div class="carousel-caption">
-                                    <h2></h2>
-                                    <p></p>
-                                </div>
-                            </div>
+</div>
 
-                        <!--Controls-->
-                            <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
-                            <div class="btn-group" id="carouselButtons"></div>
-                        </div>
-                    </div>
-              </div>
-              <div class="col-lg-4">
-                <hr class="visible-xs">
-                    <div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px;background-color:">
-                      <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
-                              <p style="color:#eeeeee;font-size:25px;padding-top:5px;">Announcements</p>
-                            </div>
-                            <div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
-                                <p><a href="">Advertisement for the post of JRF in Computer Science and Engg. dept.</a></p>
-                                <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                                <p><a href="">MBA Admissions - 2017-19</a></p>
-                                <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                                <p><a href="">RECRUITMENT FOR OFFICER CADRE POSITIONS</a></p>
-                                <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                                <p><a href="">Advertisement for the post of JRF in Computer Science and Engg. dept.</a></p>
-                                <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                                <p><a href="">MBA Admissions - 2017-19</a></p>
-                                <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                                <p><a href="">RECRUITMENT FOR OFFICER CADRE POSITIONS</a></p>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <hr class="visible-xs">
-                    <div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px;background-color:">
-                      <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
-                              <p style="color:#eeeeee;font-size:25px;padding-top:5px;">Latest News</p>
-                            </div>
-                            <div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
-                              <p><a href="">Second place awarded to B.Tech Final Year Students (Chemical Engg.) in poster presentation at CHEMTECH World Expo2017 in Mumbai</a></p>
-                              <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                              <p><a href="">Rahul Varma (13MN26) and Hem Maradia (13CO230)​ of final year B.TECH(CSE) ​ won the first place in Tata Crucible Campus Quiz (Business Quiz) representing NITK Surathkal</a></p>
-                              <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                              <p><a href="">RECRUITMENT FOR OFFICER CADRE POSITIONS</a></p>
-                              <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                              <p><a href="">VideoConferencing with the President of India</a></p>
-                            </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-lg-4">
-                    <hr class="visible-xs">
-                    <div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px">
-                      <div class="row">
-                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
-                              <p style="color:#eeeeee;font-size:25px;padding-top:5px;">Upcoming Events</p>
-                            </div>
-                            <div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
-                              <p><a href="">One day workshop on "Simulation of Manuacturing Processes"</a></p>
-                              <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                              <p><a href="">All India Inter NIT Sports. 17th to 19th March 2017</a></p>
-                              <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                              <p><a href="">INTERNATIONAL SUMMER UNIVERSITY 2017 Organised by the SCHOOL OF MANAGEMENT, NITK, IN COLLABORATION WITH HEIG-VD, From UNIVERSI</a></p>
-                              <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                              <p><a href="">VideoConferencing with the President of India</a></p>
-                              <hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
-                              <p><a href="">VideoConferencing with the President of India</a></p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-              </div>
-              <hr class="visible-xs">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="js/bootstrap.min.js"></script>
+<footer class="row-footer" style="margin-top:20px;">
+	<div class='container'>
+		<div class='row'>
+			<div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
+				<ul>
+					<h5 class="text-col" style="font-family: 'Montserrat'">INSTITUTE</h5>
+					<li class="ul-li"><a class="text-gray74" href="/category/baby-kids-toys.htm "; title="Flipkart">General Information</a></li>
+					<li class="ul-li"><a class="text-gray74" href="/category/womens-clothing.htm" title="Snapdeal" class="">Administrtion</a></li>
+					<li class="ul-li"><a class="text-gray74" href="/category/electronics-computers.htm" title="Amazon" class="">History</a></li>
+					<li class="ul-li"><a class="text-gray74" href="/category/travel-vacations.htm" title="Shopclues" class="">SC/ST Cell</a></li>
+					<li class="ul-li"><a class="text-gray74" href="/category/flowers-gifts.htm" title="PayTM" class="">RTI</a></li>
+					<li class="ul-li "><a class="text-gray74" href="/category/home-garden-tools.htm" title="MakeMyTrip" class="">Results</a></li>
+					<br>
+				</ul>
+			</div>
+			<div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
+				<ul>
+					<h5 class="text-col" style="font-family: 'Montserrat'">INSTITUTE AND INDUSTRY LINKAGE</h5>
+					<li class="ul-li"><a href=""; class="text-gray74" title="Abof" class="">Industry Linkage</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="PrintVenue" class="">Institute Linkage</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="NNNow" class="">Other Linkages</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">MOU Details</a></li><br><br><br>
+				</ul>
+			</div>
+			<div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
+				<ul>
+					<h5 class="text-col" style="font-family: 'Montserrat'">ABOUT</h5>
+					<li class="ul-li"><a href=""; class="text-gray74" title="Abof" class="">Vision and Mission</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="PrintVenue" class="">IPR Policy</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="NNNow" class="">Gallery</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">A-Z Links</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Publications</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Ph.Ds Completed</a></li>
+				</ul>
+			</div>
+			<div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
+				<ul>
+					<h5 class="text-col" style="font-family: 'Montserrat'">OTHER LINKS</h5>
+					<li class="ul-li"><a href=""; class="text-gray74" title="Abof" class="">Online Competeions
+					</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="PrintVenue" class="">Vigilance</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="NNNow" class="">Committee against Sexual Harassments</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Procurements</a></li>
+					<li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Online Fee Payment</a></li>
+				</ul>
+				<br>
+			</div>
+			<div class='col-xs-12'>
+				<p align="center" style="color:white;">© Central Computer Centre, National Institute of Technology, Surathkal.</p>
+			</div>
+		</div>
+	</div>
+</footer>
 
-            </div>
-          </div>
-
-        </div>
-      <!-- Main component for a primary marketing message or call to action -->
-
-        <!-- Bootstrap core JavaScript
-        ================================================== -->
-        <!-- Placed at the end of the document so the pages load faster -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
-        <script src="js/bootstrap.min.js"></script>
-        <footer class="row-footer" style="margin-top:20px;">
-            <div class='container'>
-                <div class='row'>
-                    <div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-                            <ul>
-                                <h5 class="text-col" style="font-family: 'Montserrat'">INSTITUTE</h5>
-                                <li class="ul-li"><a class="text-gray74" href="/category/baby-kids-toys.htm "; title="Flipkart">General Information</a></li>
-                                <li class="ul-li"><a class="text-gray74" href="/category/womens-clothing.htm" title="Snapdeal" class="">Administrtion</a></li>
-                                <li class="ul-li"><a class="text-gray74" href="/category/electronics-computers.htm" title="Amazon" class="">History</a></li>
-                                <li class="ul-li"><a class="text-gray74" href="/category/travel-vacations.htm" title="Shopclues" class="">SC/ST Cell</a></li>
-                                <li class="ul-li"><a class="text-gray74" href="/category/flowers-gifts.htm" title="PayTM" class="">RTI</a></li>
-                                <li class="ul-li "><a class="text-gray74" href="/category/home-garden-tools.htm" title="MakeMyTrip" class="">Results</a></li>
-                                <br>
-                            </ul>
-                    </div>
-                    <div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-                            <ul>
-                                <h5 class="text-col" style="font-family: 'Montserrat'">INSTITUTE AND INDUSTRY LINKAGE</h5>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="Abof" class="">Industry Linkage</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="PrintVenue" class="">Institute Linkage</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="NNNow" class="">Other Linkages</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">MOU Details</a></li><br><br><br>
-                            </ul>
-                    </div>
-                    <div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-                            <ul>
-                                <h5 class="text-col" style="font-family: 'Montserrat'">ABOUT</h5>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="Abof" class="">Vision and Mission</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="PrintVenue" class="">IPR Policy</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="NNNow" class="">Gallery</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">A-Z Links</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Publications</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Ph.Ds Completed</a></li>
-                            </ul>
-                    </div>
-                    <div class='col-lg-3 col-md-3 col-sm-3 col-xs-6'>
-                            <ul>
-                                <h5 class="text-col" style="font-family: 'Montserrat'">OTHER LINKS</h5>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="Abof" class="">Online Competeions
-    </a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="PrintVenue" class="">Vigilance</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="NNNow" class="">Committee against Sexual Harassments</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Procurements</a></li>
-                                <li class="ul-li"><a href=""; class="text-gray74" title="faballey" class="">Online Fee Payment</a></li>
-                            </ul>
-                            <br>
-                    </div>
-                    <div class='col-xs-12'>
-                            <p align="center" style="color:white;">© Central Computer Centre, National Institute of Technology, Surathkal.</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
-
-    </body>
+</body>
 </html>
