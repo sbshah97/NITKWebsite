@@ -112,6 +112,21 @@ a:hover{
 	text-decoration: none!important;
 } 
 
+.disclosures .collapse {
+	width: 100%;
+}
+
+.disclosures .panel-heading {
+	color: #48282F;
+}
+
+#rti .tab-pane {
+	padding: 10px; 
+	background: #ffffff; 
+	border: 1px solid #ddd;
+	border-top-color: transparent; 
+}
+
 @media (max-width: 767px) {
 	.carousel{
 		display: none;
