@@ -114,8 +114,7 @@ a:hover{
 
 @media (max-width: 767px) {
 	.carousel{
-		padding: 0px;
-		margin: -35px -8px -20px -8px;
+		display: none;
 	}
 
 }
