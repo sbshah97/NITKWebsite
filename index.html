@@ -24,7 +24,7 @@
 	<!-- Fixed navbar -->
 	<nav class="navbar navbar-inverse">
 		<div class="container-inverse hidden-xs" style="background-color:#F8F7DF;padding:10px;">
-			<div class="row">
+			<div class="row" style="margin: 0;">
 				<span class="col-lg-2 col-md-2 col-sm-3" style="margin-right:-50px;margin-top:5px;margin-left:20px">
 					<img class="img-reponsive" src="img/logo.png" width="70%" height="16%" alt="">
 				</span>
@@ -136,12 +136,12 @@
 				</div>
 				<div class="col-lg-4">
 					<hr class="visible-xs">
-					<div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px;background-color:">
+					<div class="container-fluid store-box-left material-box link-group" style="margin: 10px 0px 10px 0px;background-color:">
 						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title" style="background-color:#48282F" data-target="#announcements">
 								<p style="color:#eeeeee;font-size:25px;padding-top:5px;">Announcements</p>
 							</div>
-							<div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
+							<div id="announcements" class="col-lg-12 row-md-12  col-sm-12 col-xs-12 links" style="overflow-y: auto; height: 250px;padding-top:5px;">
 								<p><a href="">Advertisement for the post of JRF in Computer Science and Engg. dept.</a></p>
 								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
 								<p><a href="">MBA Admissions - 2017-19</a></p>
@@ -159,12 +159,12 @@
 				</div>
 				<div class="col-lg-4">
 					<hr class="visible-xs">
-					<div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px;background-color:">
+					<div class="container-fluid store-box-left material-box link-group" style="margin: 10px 0px 10px 0px;background-color:">
 						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title" style="background-color:#48282F" data-target="#news">
 								<p style="color:#eeeeee;font-size:25px;padding-top:5px;">Latest News</p>
 							</div>
-							<div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
+							<div id="news" class="col-lg-12 row-md-12  col-sm-12 col-xs-12 links" style="overflow-y: auto;height: 250px;padding-top:5px;">
 								<p><a href="">Second place awarded to B.Tech Final Year Students (Chemical Engg.) in poster presentation at CHEMTECH World Expo2017 in Mumbai</a></p>
 								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
 								<p><a href="">Rahul Varma (13MN26) and Hem Maradia (13CO230)​ of final year B.TECH(CSE) ​ won the first place in Tata Crucible Campus Quiz (Business Quiz) representing NITK Surathkal</a></p>
@@ -178,12 +178,12 @@
 				</div>
 				<div class="col-lg-4">
 					<hr class="visible-xs">
-					<div class="container-fluid store-box-left material-box" style="margin: 10px 0px 10px 0px">
+					<div class="container-fluid store-box-left material-box link-group" style="margin: 10px 0px 10px 0px">
 						<div class="row">
-							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="background-color:#48282F">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 title" style="background-color:#48282F" data-target="#events">
 								<p style="color:#eeeeee;font-size:25px;padding-top:5px;">Upcoming Events</p>
 							</div>
-							<div class="col-lg-12 row-md-12  col-sm-12 col-xs-12" style="overflow-y: auto;height: 250px;padding-top:5px;">
+							<div id="events" class="col-lg-12 row-md-12  col-sm-12 col-xs-12 links" style="overflow-y: auto;height: 250px;padding-top:5px;">
 								<p><a href="">One day workshop on "Simulation of Manuacturing Processes"</a></p>
 								<hr style="border-color:#48282F;padding:0px;margin:0px -100% 10px -100%;">
 								<p><a href="">All India Inter NIT Sports. 17th to 19th March 2017</a></p>
@@ -208,7 +208,18 @@
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script>
+	window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>');
+	if($(window).width()<767){
+		// To open links in new tab, for mobile screens only
+		$('a').attr('target', '_blank');
+		// Create accordion for links
+		$('.link-group .title').attr('data-toggle', 'collapse');
+		$('.link-group .links').addClass('collapse');
+	}else{
+		$('a').removeAttr('target')
+	}
+</script>
 <script src="js/bootstrap.min.js"></script>
 <footer class="row-footer" style="margin-top:20px;">
 	<div class='container'>
