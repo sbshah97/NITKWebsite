@@ -18,6 +18,7 @@
 	<link href="navbar-fixed-top.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 </head>
 <body style="background: #F8F7DF;">
 	<!-- fixed navbar -->
@@ -122,37 +123,147 @@
 	<main>
 		<div class="container">
 			<div class="row text-info text-center">
-				<h4 style="font-weight: bold;">List of courses as per latest cirriculum for Undergraduate, Postgraduate and Doctoral programmes </h4>
+				<h3 style="font-weight: bold;">List of courses as per latest cirriculum for Undergraduate, Postgraduate and Doctoral programmes </h4>
 			</div>
 			<div class="row text-center">
-				<h6>Please select the appropriate filters to view semester-wise and category-wise course offerings for each of the Degree Programmes.</h6>
+				<em style="font-size: 14px">Please select the appropriate filters to view semester-wise and category-wise course offerings for each of the Degree Programmes.</em>
 			</div>
 			<br>
 			<div class="row">
 				<div class="col-xs-12 col-sm-2 col-lg-2">
-					<ul class="nav nav-tabs nav-stacked">
-  						<li class="active"><a data-toggle="tab" href="#btech">B. Tech</a></li>
-  						<li><a data-toggle="tab" href="#mtech">M. Tech</a></li>
-  						<li><a data-toggle="tab" href="#phd">Ph. D</a></li>
-  						<li><a data-toggle="tab" href="#sem">This Semester</a></li>
+					<ul class="nav nav-pills nav-stacked">
+  						<li class="active"><a data-toggle="pill" href="#btech">B. Tech</a></li>
+  						<li><a data-toggle="pill" href="#mtech">M. Tech</a></li>
+  						<li><a data-toggle="pill" href="#phd">Ph. D</a></li>
+  						<li><a data-toggle="pill" href="#sem">This Semester</a></li>
 					</ul>
 				</div>
 				<div class="tab-content col-xs-12 col-sm-10 col-lg-10">
-					 <div id="btech" class="tab-pane fade in active">
-   						 <h3>B. Tech</h3>
-    						<p>Some content.</p>
+					 <div id="btech" class="tab-pane  fade in active">
+   						 <div class="tab">
+   						 	<h3>B. Tech</h3>
+   						 	<br>
+   						 	<div class="row">
+   						 		<div class="dropdown col-xs-6 col-sm-2 col-lg-2 filter">
+    									<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Semester
+    									<span class="caret"></span></button>
+    									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">3rd Semester</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">4th Semester</a></li>
+      										<li role="presentation" class="divider"></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">5th Semester</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">6th Semester</a></li>
+      										<li role="presentation" class="divider"></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">7th Semester</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">8th Semester</a></li>
+    									</ul>
+   						 		</div>
+   						 		<div class="dropdown col-xs-6 col-sm-2 col-lg-2 filter">
+    									<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Program Type
+    									<span class="caret"></span></button>
+    									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Any</a></li>
+      										<li role="presentation" class="divider"></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">ESC</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">PC</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">PSE</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">OE</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">PMP</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">MLC</a></li>
+    									</ul>
+   						 		</div>
+   						 	</div>
+   						 	<br>
+   						 	<div class="list-group">
+								<a href="#" class="list-group-item">Course #1</a>
+								<a href="#" class="list-group-item">Course #2</a>
+								<a href="#" class="list-group-item">Course #3</a>
+								<a href="#" class="list-group-item">Course #4</a>
+								<a href="#" class="list-group-item">Course #5</a>
+								<a href="#" class="list-group-item">Course #6</a>
+								<a href="#" class="list-group-item">Course #7</a>
+								<a href="#" class="list-group-item">Course #8</a>
+								<a href="#" class="list-group-item">Course #9</a>
+							</div>
+   						 </div>
   					</div>
   					<div id="mtech" class="tab-pane fade">
-   						 <h3>M. Tech</h3>
-   						 <p>Some content in menu 1.</p>
+   						 <div class="tab">
+   						 	<h3>M. Tech</h3>
+   						 	<br>
+   						 	<div class="row">
+   						 		<div class="dropdown col-xs-6 col-sm-2 col-lg-2 filter">
+    									<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Semester
+    									<span class="caret"></span></button>
+    									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">1st Semester</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">2nd Semester</a></li>
+      										<li role="presentation" class="divider"></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">3rd Semester</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">4th Semester</a></li>
+    									</ul>
+   						 		</div>
+   						 		<div class="dropdown col-xs-6 col-sm-2 col-lg-2 filter">
+    									<button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Program Type
+    									<span class="caret"></span></button>
+    									<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Any</a></li>
+      										<li role="presentation" class="divider"></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">PC</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">Ele</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">PMP</a></li>
+      										<li role="presentation"><a role="menuitem" tabindex="-1" href="#">MLC</a></li>
+    									</ul>
+   						 		</div>
+   						 	</div>
+   						 	<br>
+   						 	<div class="list-group">
+								<a href="#" class="list-group-item">Course #1</a>
+								<a href="#" class="list-group-item">Course #2</a>
+								<a href="#" class="list-group-item">Course #3</a>
+								<a href="#" class="list-group-item">Course #4</a>
+								<a href="#" class="list-group-item">Course #5</a>
+								<a href="#" class="list-group-item">Course #6</a>
+								<a href="#" class="list-group-item">Course #7</a>
+								<a href="#" class="list-group-item">Course #8</a>
+								<a href="#" class="list-group-item">Course #9</a>
+							</div>
+   						 </div>
   					</div>
   					<div id="phd" class="tab-pane fade">
-    						<h3>Ph. D</h3>
-    						<p>Some content in menu 2.</p>
+    						<div class="tab">
+   						 	<h3>Ph. D</h3>
+   						 	<br>
+   						 	<div class="list-group">
+								<a href="#" class="list-group-item">Course #1</a>
+								<a href="#" class="list-group-item">Course #2</a>
+								<a href="#" class="list-group-item">Course #3</a>
+								<a href="#" class="list-group-item">Course #4</a>
+								<a href="#" class="list-group-item">Course #5</a>
+								<a href="#" class="list-group-item">Course #6</a>
+								<a href="#" class="list-group-item">Course #7</a>
+								<a href="#" class="list-group-item">Course #8</a>
+								<a href="#" class="list-group-item">Course #9</a>
+							</div>
+   						 </div>
   					</div>
-  					<div id="sem" class="tab-pane fade">
-  						<h3>This Semester</h3>
-  						<p></p>
+  					<div id="sem" class="tab-pane tab fade">
+  						<div class="tab">
+   						 	<h3>This Semester</h3>
+   						 	<p>List of courses being offered by the department this semester</p>
+   						 	<br>
+   						 	<div class="list-group">
+								<a href="#" class="list-group-item">Course #1</a>
+								<a href="#" class="list-group-item">Course #2</a>
+								<a href="#" class="list-group-item">Course #3</a>
+								<a href="#" class="list-group-item">Course #4</a>
+								<a href="#" class="list-group-item">Course #5</a>
+								<a href="#" class="list-group-item">Course #6</a>
+								<a href="#" class="list-group-item">Course #7</a>
+								<a href="#" class="list-group-item">Course #8</a>
+								<a href="#" class="list-group-item">Course #9</a>
+							</div>
+   						 </div>
   					</div>
 				</div>
 			</div>
@@ -178,5 +289,28 @@
 			</div>
 		</div>
 	</footer>
+
+	<style type="text/css" media="screen">
+		.nav-pills > .active > a, .nav-pills > .active > a:hover {
+    			background-color: #48282F !important;
+		}
+
+		.tab {
+			width: 100%;
+			height: 100%;
+			padding: 10px 20px;
+			background-color: rgb(255, 255, 255);
+		}
+
+		.shade {
+			background-color: rgb(158, 138, 142); 
+		}
+
+		.filter > .dropdown-toggle {
+			background-color: #48282F;
+			color: #FFFFFF;
+		}
+
+	</style>
 </body>
 </html>
