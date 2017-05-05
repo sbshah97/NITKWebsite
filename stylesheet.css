@@ -112,10 +112,11 @@ a:hover{
 	text-decoration: none!important;
 } 
 
-@media (max-width: 767px) {
-	.carousel{
-		padding: 0px;
-		margin: -35px -8px -20px -8px;
+@media (max-width: 768px) {
+	/* for mobile phones: */
+[class*="col-"]{
+		width: 100%;
+}
 	}
 
 }
