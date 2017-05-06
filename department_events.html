@@ -120,15 +120,16 @@
 	<main>
 	<div class="container">
 			<div class="row">
-				<ul class="nav nav-tabs ">
-  					<li class="active"><a data-toggle="tab" href="#conf">Conferences & Workshops</a></li>
-  					<li><a data-toggle="tab" href="#sttp">STTPs & Distinguished Lectures</a></li>
- 					<li><a data-toggle="tab" href="#others">Other Events</a></li>
+				<div class="row">
+				<ul class="nav nav-tabs responsive-tabs ">
+  					<li class="active col-xs-12 col-sm-4 col-lg-4"><a data-toggle="tab" href="#conf">Conferences & Workshops</a></li>
+  					<li class="col-xs-12 col-sm-4 col-lg-4"><a data-toggle="tab" href="#sttp">STTPs & Distinguished Lectures</a></li>
+ 					<li class="col-xs-12 col-sm-4 col-lg-4"><a data-toggle="tab" href="#others">Other Events</a></li>
 				</ul>
-
+				</div>
 				<div class="tab-content">
   					<div id="conf" class="tab-pane fade in active">					
-    					<h3><center>Conferences & Workshops</center></h3>
+    					
     						<div class="panel-group panel " id="confs" role="tablist">	  					                            
                             
                             <!--content for first event-->
@@ -227,7 +228,7 @@
     						
   					</div>
 					<div id="sttp" class="tab-pane fade">
-					    <h3><center>STTPs & Distinguished Lectures</center></h3>
+					    
 					    	<div class="panel-group panel " id="sttps" role="tablist">	  					                            
                             
                             <!--content for first event-->
@@ -328,7 +329,7 @@
 					    
 					
 					<div id="others" class="tab-pane fade">
-					    <h3><center>Other Events</center></h3>
+					    
 					    	<div class="panel-group panel " id="others2" role="tablist">	  					                            
                             
                             <!--content for first event-->
@@ -461,24 +462,15 @@
 			background-color: #48282F;
 			color: #FFFFFF;
 		}
-
 		.eventimg{	
 			max-width: 100px;
 			height: 100px;
 			margin-top: 25px;
-
-
 		}
 		.panel{
 			padding: 20px;
-
 		}
-
-		center
-		{
-			background-color: #48282F;
-			color: #FFFFFF;
-		}
+		
 		.row{
 			box-sizing: border-box;
 			
