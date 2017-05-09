@@ -10,7 +10,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/stylesheet.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
-	<link href="navbar-fixed-top.css" rel="stylesheet">
+	<!-- <link href="navbar-fixed-top.css" rel="stylesheet"> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
@@ -49,10 +49,57 @@
 	                </div>
 	            </div>
             </div>
-                                                    										
+            <div class="col-xs-12 col-md-6 col-lg-6">
+                <div class="card-normal videos">
+                    <div class="title">
+                        Videos
+                    </div>
+                    <div class="videos-container">
+                        <ul>
+                            <li class="video-placeholder"></li>
+                            <li class="video-placeholder"></li>
+                            <li class="video-placeholder"></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>                                										
 		</div>
-
-
+        <div class="row">
+            <div class="col-xs-12 col-xm-12 col-lg-12">
+                <div class="card-normal pictures">
+                    <div class="title">
+                        Pictures
+                    </div>
+                    <div class="pictures-container">
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        <div class="pictures-placeholder"></div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row footer">
+            <center><div class="col-xs-12 col-xm-12 col-lg-12">
+                <div class="footer-head">
+                    Connect With Us
+                </div>
+                <div class="footer-links">
+                    <a href="#"><img class="logo" src="img/facebook-5-64.png"></a>
+                    <a href="#"><img class="logo" src="img/instagram-5-64.png"></a>
+                </div>
+                <div class="footer-text">
+                    Bharat Darshan 2018
+                </div>
+            </div></center>
+        </div>
 
 </body>
 <style>
@@ -73,10 +120,7 @@
     -webkit-transition: 1s;
     transform-style: preserve-3d;
     transition: 1s;
-    background-image: url("img/about.jpg");
-
-    
-   
+    background-image: url("img/about.jpg");   
 }
 .flip .card .face {
   -webkit-backface-visibility: hidden ;
@@ -94,12 +138,76 @@
           transform: rotatey(-180deg);
           
 }
-  .inner{margin:0px !important;}
+.inner{
+    margin:0px !important;
+}
 .img-circle{
 	height: 80px;
 	width: 80px;
 }
 
+.videos-container {
+    height: 220px;
+    width: auto;
+    overflow-y: auto;
+}
+.video-placeholder {
+    margin: 10px;
+    height: 200px;
+    width: 270px;
+    background: #777;
+    display: inline-block;
+}
+.pictures-container {
+    height: 420px;
+    padding: 10px;
+    overflow-y: scroll;
+}
+.pictures-placeholder {
+    background-color: #999;
+    height: 200px;
+    width: 300px;
+    display: inline-block;
+}
+.col-xs-12, .col-md-6, .col-lg-6 {
+    padding: 0px !important;
+}
+
+.row {
+    margin: 0px;    
+}
+.logo {
+    height: 30px;
+    width: 30px;
+}
+.footer-links {
+    padding: 10px;
+}
+.footer {
+    background: #000;
+    color: white;
+    padding: 10px;
+}
+.footer-head {
+    font-size: 35px;
+}
+.footer-text {
+    padding-top: 15px;    
+}
+.card-normal {
+    padding: 15px;
+    color: #FFF;
+}
+.videos {
+    background-color: #444;
+}
+.pictures {
+    background-color: #555; 
+}
+.title {
+    text-align: left;
+    font-size: 35px;
+}
 
 .card{
 	padding: 60px;
@@ -134,9 +242,6 @@
 
 .row-second{
 	background-image: url(img/black.jpg);
-	
-	height: 500px;
-
 }
 #heading{
 	padding:; 100px;
