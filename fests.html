@@ -17,9 +17,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 <body>
-	
+	<!-- Edit 'full' class background image for banner -->
     <div class="full">
     	<div class="row row-first">
+            <!-- Change the heading and tagline here -->
     		<h3><center><span id="heading"> BHARAT DARSHAN</span></center></h3>
     		<div class="col-xs-12 col-xm-12 col-lg-12">
     		<center><span id="subline">Intra-college cultural fest</span></center>
@@ -34,12 +35,14 @@
 			<div class="flip">
 				<div class="card text-center">
 					<div class="face front"> 
-	            		<div class="inner"> 
+	            		<div class="inner">
+                                <!-- Edit fest name here -->
             				    <div class="card-title">About Bharat Darshan </div>
 	            		</div>
 	            	</div>	
 	       		    <div class="face back"> 
-            		  	<div class="inner"> 																
+            		  	<div class="inner"> 				
+                            <!-- Add fest description here												 -->
 							<div class="card-content">
 								Culture plays an important role in the development of any nation. It represents a set of shared attitudes, values, goals and practices. Culture and creativity manifest themselves in almost all economic, social and other activities. A country as diverse as India is symbolized by the plurality of its culture.
 			                     India has one of the world’s largest collections of songs, music, dance, theatre, folk traditions, performing arts, rites and rituals, paintings and writings that are known, as the ‘Intangible Cultural Heritage’ (ICH) of humanity.  A country as diverse as India is symbolized by the plurality of its culture.
@@ -59,9 +62,10 @@
                 <hr>
                 <div class="videos-container">
                     <ul>
-                        <li class="video-placeholder"></li>
-                        <li class="video-placeholder"></li>
-                        <li class="video-placeholder"></li>
+                        <!-- List of videos here -->
+                        <li class="video-placeholder"><iframe src="" class="video-frame"></iframe></li>
+                        <li class="video-placeholder"><iframe src="" class="video-frame"></iframe></li>
+                        <li class="video-placeholder"><iframe src="" class="video-frame"></iframe></li>
                     </ul>
                 </div>
             </div>
@@ -75,6 +79,7 @@
                 </div>
                 <hr>
                 <div class="pictures-container">
+                    <!-- List of images here -->
                     <div class="pictures-placeholder"></div>
                     <div class="pictures-placeholder"></div>
                     <div class="pictures-placeholder"></div>
@@ -96,10 +101,12 @@
             </div>
             <hr>
             <div class="footer-links">
+                <!-- social links here -->
                 <a href="#"><img class="logo" src="img/facebook-5-64.png"></a>
                 <a href="#"><img class="logo" src="img/instagram-5-64.png"></a>
             </div>
             <div class="footer-text">
+                <!-- fest name here -->
                 Bharat Darshan 2018
             </div>
         </div></center>
@@ -128,7 +135,7 @@ body {
     transform-style: preserve-3d;
     transition: 1s;
     background-color: #263238;
-    /*background-image: url("img/about.jpg");   */
+    background-image: url("img/about.jpg");   
 }
 .flip .card .face {
   -webkit-backface-visibility: hidden ;
@@ -136,8 +143,7 @@ body {
    z-index: 2;
 }
 .flip .card .front {
-   position: absolute;
-   
+   position: absolute;   
    z-index: 1;
 }
 .flip .card .back {
@@ -168,6 +174,10 @@ hr {
     width: 270px;
     background: #777;
     display: inline-block;
+}
+.video-frame {
+    height: 200px;
+    width: 270px;
 }
 .pictures-container {
     height: 420px;
@@ -210,10 +220,10 @@ hr {
     color: #FFF;
 }
 .videos {
-    background-color: #37474F;
+    background-image: url("img/about.jpg");   
 }
 .pictures {
-    background-color: #455A64; 
+    background-image: url("img/about.jpg");   
 }
 .title {
     text-align: left;
@@ -251,12 +261,10 @@ hr {
 }
 
 .row-second{
-	background-image: url(img/black.jpg);
+	background-color: #111;
 }
 #heading{
-	/*padding: 100px;*/
 	font-size: 60px;
-	/*font-family: fantasy;*/
 }
 #subline{
 	font-size: 30px;
@@ -270,10 +278,8 @@ p {
     font-size: 40px;
     color:black;
     padding-bottom: 120px;
-/*    padding-left: 120px;
     padding-right:120px;*/
     padding-top: 50px;
-    /*margin: 25px;*/
     width: 400 center;
     /*font-family: fantasy;*/
 }
@@ -281,12 +287,8 @@ p {
 
     #demo{
     	font-size:28px;
-/*    	padding-left: 10px;
     	padding-right: 10px;*/
     	padding-top: 0px;
-
-    	/*margin: 10px;*/
-    	
     }
     #subline{
     	padding-bottom: 1px;
