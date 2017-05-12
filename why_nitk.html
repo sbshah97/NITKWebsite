@@ -15,17 +15,83 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/stylesheet.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
-	<link href="navbar-fixed-top.css" rel="stylesheet">
+	<!-- <link href="navbar-fixed-top.css" rel="stylesheet"> -->
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<style>
-  .carousel-inner > .item > img,
-  .carousel-inner > .item > a > img {
-      width: 100%;
-      margin: auto;
-  	}
-  	</style>
+* {box-sizing:border-box}
+body {font-family: Verdana,sans-serif;}
+.mySlides {display:none}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+</style>
+
 
 </head>
 <body style="background: #F8F7DF;">
@@ -132,107 +198,100 @@
 	<main>
 	<div class="container">
 	<h2><strong>Why NITK?</strong></h2>
+	
 	<div class="col-md-6">
-				<div class="thumbnail">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-    				<!-- Indicators -->
-    					<ol class="carousel-indicators">
-      						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      						<li data-target="#myCarousel" data-slide-to="1"></li>
-      						<li data-target="#myCarousel" data-slide-to="2"></li>
-      						<li data-target="#myCarousel" data-slide-to="3"></li>
-      						<li data-target="#myCarousel" data-slide-to="4"></li>
-      						<li data-target="#myCarousel" data-slide-to="5"></li>
-      						<li data-target="#myCarousel" data-slide-to="6"></li>
-      						<li data-target="#myCarousel" data-slide-to="7"></li>
-      						<li data-target="#myCarousel" data-slide-to="8"></li>
-      						<li data-target="#myCarousel" data-slide-to="9"></li>
-    					</ol>
+		<div class="thumbnail">
+			<div class="slideshow-container">
 
-    		<!-- Wrapper for slides -->
-    					<div class="carousel-inner" role="listbox">
-      						<div class="item active">
-      							<a href="img/SS1.jpg" target="_blank">
-        							<img src="img/SS1.jpg" alt="1" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+				    <img src="img/SS1.jpg" style="width:100%">
+				</div>
 
-      						<div class="item">
-      							<a href="img/SS2.jpg" target="_blank">
-        							<img src="img/SS2.jpg" alt="2" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS2.jpg" style="width:100%">
+				</div>
 
-      						<div class="item">
-      							<a href="img/SS3.png" target="_blank">
-        							<img src="img/SS3.png" alt="2" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS3.png" style="width:100%">
+				</div>
 
-      						<div class="item">
-      							<a href="img/SS4.jpg" target="_blank">
-        							<img src="img/SS4.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS4.jpg" style="width:100%">
+				</div>
 
-      						<div class="item">
-      							<a href="img/SS5.jpg" target="_blank">
-        							<img src="img/SS5.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS5.jpg" style="width:100%">
+  				</div>
 
-      						<div class="item">
-      							<a href="img/SS6.jpg" target="_blank">
-        							<img src="img/SS6.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS6.jpg" style="width:100%">
+				</div>
 
-      						<div class="item">
-      							<a href="img/SS7.jpg" target="_blank">
-        							<img src="img/SS7.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS7.jpg" style="width:100%">
+				</div>
+	
+				<div class="mySlides fade">
+  					<img src="img/SS8.jpg" style="width:100%">
+				</div>
 
-      						<div class="item">
-      							<a href="img/SS8.jpg" target="_blank">
-        							<img src="img/SS8.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS9.jpg" style="width:100%">
+			  	</div>
 
-      						<div class="item">
-      							<a href="img/SS9.jpg" target="_blank">
-        							<img src="img/SS9.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
+				<div class="mySlides fade">
+  					<img src="img/SS10.jpg" style="width:100%">  
+				</div>
 
-      						<div class="item">
-      							<a href="img/SS10.jpg" target="_blank">
-        							<img src="img/SS10.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/SS11.jpg" target="_blank">
-        							<img src="img/SS11.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
-    					</div>
-
-    		<!-- Left and right controls -->
-    					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    	<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      						<span class="sr-only">Next</span>
-    					</a>
-  					</div>
+				<div class="mySlides fade">
+  					<img src="img/SS11.jpg" style="width:100%">
 				</div>
 			</div>
+		</div>
+<br>
+
+		<div style="text-align:center">
+  			<span class="dot"></span> 
+  			<span class="dot"></span> 
+  			<span class="dot"></span>
+  			<span class="dot"></span> 
+  			<span class="dot"></span> 
+  			<span class="dot"></span> 
+  			<span class="dot"></span> 
+  			<span class="dot"></span> 
+  			<span class="dot"></span> 
+  			<span class="dot"></span>
+  			<span class="dot"></span>   
+		</div>
+		<script>
+		var slideIndex = 0;
+		showSlides();
+
+		function showSlides() {
+    	var i;
+    	var slides = document.getElementsByClassName("mySlides");
+    	var dots = document.getElementsByClassName("dot");
+    	for (i = 0; i < slides.length; i++) {
+	       slides[i].style.display = "none";  
+    	}
+    	slideIndex++;
+    	if (slideIndex> slides.length) {slideIndex = 1}    
+    	for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    	}
+    	slides[slideIndex-1].style.display = "block";  
+    	dots[slideIndex-1].className += " active";
+    	setTimeout(showSlides, 2000); // Change image every 2 seconds
+		}
+
+		</script>
+
+	</div>
 	<!-- TEXT-->
+	<div class="col-md-3">
+	<div class="thumbnail" style="background: #F8F7DF; border-color: #F8F7DF" class="word-wrap:break-word;">
 		<div class="container">
-		<ul class="list-group">
+		<ul class="list-group"  style="display: inline-block;">
 			<li>One of the oldest and pioneer Technical Institutions in India started in 1960.</li>
 			<li>Excellent Placement record and highly accomplished Alumni.</li>
 			<li>Attracts the highest student minds from all over the country and abroad.</li>
@@ -240,24 +299,26 @@
 			<li>Linkages and Collaborations with various leading International & National Institutes, Industries and Organizations across the Globe.</li>
 			<li>Highly motivated and qualified faculty out of which 86% are Ph.D. holders.</li>
 			<li>Dedicated and trained technical and administrative staff.</li>
+			<li>Independent Sports Block with all modern facilities.</li>
+			<li>Modern international standard swimming pool, gymnasium and individual standard fields for all major games and sports.</li>
 			<li>A central computer centre with campus wide networking and internet access through 155 Mbps leased line to BSNL and access to the National Knowledge Network through
 			a 1 Gbps link.</li>
-			<li>Dedicated commercial complex, nationalized banks with ATM, cafeterias and food courts inside the campus.
-</li>
+			<li>Dedicated commercial complex, nationalized banks with ATM, cafeterias and food courts inside the campus.</li>
 			<li>Proximity to Bangalore, the IT capital of India; Meets manpower needs of IT establishments.</li>
 			<li>Good connectivity by road, rail and air.</li>
 		</ul>
+		</div>
 		</div>
 	</div>
 	</div>
 	<hr>
 	<div class="container">
-	<!--POINT 1 -->
 		<div class="row">
+		<!--POINT 1 -->
 			<div class="col-md-4">
 				<div class="thumbnail">
 					<a href="img/oldest-nitk.jpg" target="_blank">
-						<img src="img/oldest-nitk.jpg" alt="oldest-nitk" style="width: 100%">
+						<img src="img/oldest-nitk.jpg" alt="oldest-nit" style="width: 100%">
 							<div class="caption">
 								<p>One of the oldest and pioneer Technical Institutions in India started in 1960.</p>
 							</div>
@@ -268,7 +329,7 @@
 			<div class="col-md-4">
 				<div class="thumbnail">
 					<a href="img/best-rated.jpg" target="_blank">
-						<img src="img/best-rated.jpg" alt="best-rated" style="width: 100%">
+						<img src="img/best-rated.jpg" alt="best rated" style="width: 100%">
 							<div class="caption">
 								<p>Rated as one of the Best Engineering Colleges in India.</p>
 							</div>
@@ -278,279 +339,72 @@
 	<!--POINT 3 -->
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-    				<!-- Indicators -->
-    					<ol class="carousel-indicators">
-      						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      						<li data-target="#myCarousel" data-slide-to="1"></li>
-    					</ol>
-
-    		<!-- Wrapper for slides -->
-    					<div class="carousel-inner" role="listbox">
-      						<div class="item active">
-      							<a href="img/beach.png" target="_blank">
-        							<img src="img/beach.png" alt="NITK-Beach" width="460" height="345">
-        						</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/ch1.jpg" target="_blank">
-        							<img src="img/ch1.jpg" alt="Light-House" width="460" height="345">
-        						</a>
-      						</div>
-    					</div>
-
-    		<!-- Left and right controls -->
-    					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    	<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      						<span class="sr-only">Next</span>
-    					</a>
-  					</div>
-					<div class="caption">
-						<p>Only college to have a Private Beach & a Light House</p>
-					</div>
+					<a href="img/beach.png" target="_blank">
+						<img src="img/beach.png" alt="NITK-Beach" style="width: 100%">
+							<div class="caption">
+								<p>Only college to have a Private Beach & a Light House</p>
+							</div>
+					</a>
 				</div>
 			</div>
 			
-			<!--POINT 4 -->
+	<!--POINT 4 -->
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-    		<!-- Indicators -->
-    					<ol class="carousel-indicators">
-      						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      						<li data-target="#myCarousel" data-slide-to="1"></li>
-    					</ol>
-
-    		<!-- Wrapper for slides -->
-    					<div class="carousel-inner" role="listbox">
-      						<div class="item active">
-      							<a href="img/Library1.jpg" target="_blank">
-        							<img src="img/Library1.jpg" alt="NITK-Library" width="460" height="345">
-        						</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/Library2.jpg" target="_blank">
-        							<img src="img/Library2.jpg" alt="NITK-Library" width="460" height="345">
-        						</a>
-      						</div>
-    
-    					</div>
-
-    		<!-- Left and right controls -->
-    					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      						<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      						<span class="sr-only">Next</span>
-    					</a>
-  					</div>
-					<div class="caption">
-						<p>Fully equipped Central library with cast collection of learning material in print, video, CD media and online computer search.</p>
-					</div>
+					<a href="img/Library2.jpg" target="_blank">
+						<img src="img/Library2.jpg" alt="NITK-Library" style="width: 100%">
+							<div class="caption">
+								<p>Fully equipped Central library with cast collection of learning material in print, video, CD media and online computer search.</p>
+							</div>
+					</a>
 				</div>
 			</div>
 	<!--POINT 5 -->
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-    			<!-- Indicators -->
-    					<ol class="carousel-indicators">
-      						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      						<li data-target="#myCarousel" data-slide-to="1"></li>
-            				<li data-target="#myCarousel" data-slide-to="2"></li>
-    					</ol>
-
-    			<!-- Wrapper for slides -->
-    					<div class="carousel-inner" role="listbox">
-      						<div class="item active">
-      							<a href="img/ground.jpg" target="_blank">
-        							<img src="img/ground.jpg" alt="NITK-Ground" width="460" height="345">
-        						</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/basketball.jpg" target="_blank">
-        							<img src="img/basketball.jpg" alt="NITK-BasketballCourt" width="460" height="345">
-      							</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/swmpl.jpg" target="_blank">
-        							<img src="img/swmpl.jpg" alt="NITK-SwimmingPool" width="460" height="345">
-        						</a>
-      						</div>
-    
-    					</div>
-
-    			<!-- Left and right controls -->
-    					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      						<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      						<span class="sr-only">Next</span>
-    					</a>
-  					</div>
-					<div class="caption">
-						<p>Fully equipped Central library with cast collection of learning material in print, video, CD media and online computer search.</p>
-					</div>
+					<a href="img/ground.jpg" target="_blank">
+						<img src="img/ground.jpg" alt="NITK sports" style="width: 100%">
+							<div class="caption">
+								<p>Modern international standard swimming pool, gymnasium and individual standard fields for all major games and sports.</p>
+							</div>
+					</a>
 				</div>
 			</div>
 		<!--POINT 6 -->
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-    			<!-- Indicators -->
-    					<ol class="carousel-indicators">
-      						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      						<li data-target="#myCarousel" data-slide-to="1"></li>
-    					</ol>
-
-    			<!-- Wrapper for slides -->
-    					<div class="carousel-inner" role="listbox">
-      						<div class="item active">
-      							<a href="img/mt1.jpg" target="_blank">
-        							<img src="img/mt1.jpg" alt="Mega Towers" width="460" height="345">
-      							</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/mt2.jpg" target="_blank">
-        							<img src="img/mt2.jpg" alt="Mega Towers" width="460" height="345">
-      							</a>
-      						</div>
-    
-    					</div>
-
-    			<!-- Left and right controls -->
-    					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      						<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      						<span class="sr-only">Next</span>
-    					</a>
-  					</div>
-					<div class="caption">
-						<p>Mega hostel blocks with state of the art facilities and Wi-Fi Connectivity.</p>
-					</div>
-					
+					<a href="img/mt1.jpg" target="_blank">
+						<img src="img/mt1.jpg" alt="NITK Hostels" style="width: 100%">
+							<div class="caption">
+								<p>Mega hostel blocks with state of the art facilities and Wi-Fi Connectivity.</p>
+							</div>
+					</a>
 				</div>
 			</div>
 		</div>
+	</div>
+	<div class="row">
+		<div class="container">
 	<!--POINT 7-->
-		<div class="row">
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-    			<!-- Indicators -->
-    					<ol class="carousel-indicators">
-      						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-					    	<li data-target="#myCarousel" data-slide-to="1"></li>
-            				<li data-target="#myCarousel" data-slide-to="2"></li>
-            				<li data-target="#myCarousel" data-slide-to="3"></li>
-            				<li data-target="#myCarousel" data-slide-to="4"></li>
-    					</ol>
-
-    			<!-- Wrapper for slides -->
-    					<div class="carousel-inner" role="listbox">
-      						<div class="item active">
-      							<a href="img/foodcourt.jpg" target="_blank">
-        							<img src="img/foodcourt.jpg" alt="foodcourt" width="460" height="345">
-      							</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/nescafe.jpg" target="_blank">
-        							<img src="img/nescafe.jpg" alt="nescafe" width="460" height="345">
-      							</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/amul.jpg" target="_blank">
-        							<img src="img/amul.jpg" alt="AMUL" width="460" height="345">
-      							</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/fresh&honest.jpg" target="_blank">
-        							<img src="img/fresh&honest.jpg" alt="fresh&honest" width="460" height="345">
-      							</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/nandini.jpg" target="_blank">
-        							<img src="img/nandini.jpg" alt="Nandini" width="460" height="345">
-        						</a>
-      						</div>
-    
-    					</div>
-
-    			<!-- Left and right controls -->
-    					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      						<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      						<span class="sr-only">Next</span>
-    					</a>
-  					</div>
-					<div class="caption">
-						<p>Dedicated commercial complex, nationalized banks with ATM, cafeterias and food courts inside the campus.</p>
-					</div>
-					
+					<a href="img/foodcourt.jpg" target="_blank">
+						<img src="img/foodcourt.jpg" alt="foodcourt" style="width: 100%">
+							<div class="caption">
+								<p>Dedicated commercial complex, nationalized banks with ATM, cafeterias and food courts inside the campus.</p>
+							</div>
+					</a>
 				</div>
 			</div>
 		<!--POINT 8 -->
 			<div class="col-md-4">
 				<div class="thumbnail">
-					<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
-    			<!-- Indicators -->
-    					<ol class="carousel-indicators">
-      						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      						<li data-target="#myCarousel" data-slide-to="1"></li>
-    					</ol>
-
-    			<!-- Wrapper for slides -->
-    					<div class="carousel-inner" role="listbox">
-      						<div class="item active">
-      							<a href="img/ccclab.jpg" target="_blank">
-        							<img src="img/ccclab.jpg" alt="CCC" width="460" height="345">
-        						</a>
-      						</div>
-
-      						<div class="item">
-      							<a href="img/dept.jpg" target="_blank">
-        							<img src="img/dept.jpg" alt="Department" width="460" height="345">
-      							</a>
-      						</div>
-    
-    					</div>
-
-    			<!-- Left and right controls -->
-    					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      						<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      						<span class="sr-only">Previous</span>
-    					</a>
-    					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      						<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      						<span class="sr-only">Next</span>
-    					</a>
-  					</div>
-					<div class="caption">
-						<p>World class infrastructure and highly equipped labs and class rooms with all modern amenities.</p>
-					</div>
+					<a href="img/ccclab.jpg" target="_blank">
+						<img src="img/ccclab.jpg" alt="NITK Labs" style="width: 100%">
+							<div class="caption">
+								<p>World class infrastructure and highly equipped labs and class rooms with all modern amenities.</p>
+							</div>
+					</a>
 				</div>
 			</div>
 		<!--POINT 9 -->
@@ -565,6 +419,62 @@
 				</div>
 			</div>
 		</div>
+		</div>
+		<div class="container">
+			<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Click here to view more images</button>
+			<!-- Modal -->
+  			<div class="modal fade" id="myModal" role="dialog">
+    			<div class="modal-dialog modal-lg">
+    			<!-- Modal content-->
+      				<div class="modal-content">
+      				<!--Modal Header -->
+        				<!-- <div class="modal-header">
+          					<button type="button" class="close" data-dismiss="modal">&times;</button>
+          						<h4 class="modal-title">Modal Header</h4>
+        				</div> -->
+        			<!--Modal Body -->
+        				<div class="modal-body">
+          					<div class="row">
+  								<div class="col-md-4">
+    								<div class="thumbnail">
+      									<a href="img/ch1.jpg">
+           									<img src="img/ch1.jpg" alt="Light-House NITK" style="width:100%">
+        									<div class="caption">
+          										<p>NITK LightHouse</p>
+        									</div>
+      									</a>
+    								</div>
+  								</div>
+  								<div class="col-md-4">
+    								<div class="thumbnail">
+      									<a href="img/swmpl.jpg">
+        									<img src="img/swmpl.jpg" alt="NITK Swimming Pool" style="width:100%">
+							        		<div class="caption">
+          										<p>NITK Swimming Pool</p>
+        									</div>
+      									</a>
+    								</div>
+  								</div>
+ 								<div class="col-md-4">
+    								<div class="thumbnail">
+      									<a href="img/basketball.jpg">
+        									<img src="img/basketball.jpg" alt="Basketball Court" style="width:100%">
+							        		<div class="caption">
+          										<p>NITK Basketball Court</p>
+        									</div>
+      									</a>
+    								</div>
+  								</div>
+							</div>
+        				</div>
+        			<!--Modal Footer -->
+        				<div class="modal-footer">
+          					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- IFRAMES -->
 		<hr>
 		<div class="container">
 		<div class="media">
@@ -575,7 +485,8 @@
 			<iframe width="350" height="200" src="https://www.youtube.com/embed/yaRNRXASobQ" frameborder="0" allowfullscreen></iframe>
 		
 			<iframe width="350" height="200" src="https://www.youtube.com/embed/EvKMtc2JOFY" frameborder="0" allowfullscreen></iframe>
-			</div>
-			</div>
 		</div>
+		</div>
+		</div>
+	
 	</main>
