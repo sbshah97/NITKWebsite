@@ -1,0 +1,375 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="ficon.ico">
+
+	<title>Placements | Departmemt of Information Technology</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+	<link href="navbar-fixed-top.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="https://code.highcharts.com/highcharts.js"></script>
+
+	<style type="text/css">
+		
+		.list {
+			padding-left: 15 !important;
+		}
+
+		.col-lg-4 {
+			padding-left:  8 !important;
+			padding-right: 8 !important;
+		}
+
+		main {
+			margin-top: 5%;
+		}
+
+		#about .panel-heading {
+			height: 300px;
+			color: white;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+
+		.mchart {
+			width: 100%;
+			display: block;
+		}
+
+		.mchart-title {
+			background-color: white;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+			color: rgba(0, 0, 0, 0.6);
+			font-size: 200%;
+		}
+
+		.pies h2{
+			color: rgba(0, 0, 0, 0.6);
+		}
+
+		.mchart-chart {
+			height: 400px;
+			width: 100%;
+			color: white;
+		}
+
+		.mpie div {
+			display: inline-block;
+			width: 100%;
+		}
+
+	</style>
+
+
+	<script type="text/javascript">
+
+	function init_charts(){
+
+
+		// Column Chart
+
+		var chart = {
+		type: 'column',
+		backgroundColor: '#81d4fa',
+		style : {
+			color: 'rgba(0, 0, 0, 0.7)'
+		}
+		};
+		var title = {
+		text: 'Pay Statistics',
+		style : {color: 'rgba(0, 0, 0, 0)'}
+		};
+		var xAxis = {
+		categories: ['2015-14', '2015-16', '2016-17'],
+		title: {
+		 text: null
+		},
+		labels: {
+			style : {color: 'rgba(0, 0, 0, 0.7)'}
+		}
+		};
+		var yAxis = {
+		min: 0,
+		title: {
+		 text: 'Population (millions)',
+		 align: 'high',
+		 style : {color: 'rgba(0, 0, 0, 0.7)'}
+		},
+		labels: {
+		 overflow: 'justify'
+		},
+		gridLineColor: 'rgba(0, 0, 0, 0)',
+		labels: {
+			style : {color: 'rgba(0, 0, 0, 0.7)'}
+		}
+		};
+		var tooltip = {
+		valueSuffix: ' millions'
+		};
+		var plotOptions = {
+		bar: {
+		 dataLabels: {
+		    enabled: true
+		 }
+		}
+		};
+		var legend = {
+		layout: 'vertical',
+		align: 'right',
+		verticalAlign: 'top',
+		floating: true,
+		borderWidth: 1,
+		backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
+		borderColor: null
+		};
+		var credits = {
+		enabled: false
+		};
+
+		var series= [{
+		    name: 'Average Pay',
+		    data: [107, 31, 120],
+		    borderColor: 'rgba(0, 0, 0, 0)',
+		    color: '#03a9f4'
+		}, {
+		    name: 'Highest Pay',
+		    data: [133, 156, 150],
+		    borderColor: 'rgba(0, 0, 0, 0)',
+		    color: '#0288d1'
+		}
+		];     
+
+		var json = {};   
+		json.chart = chart; 
+		json.title = title;   
+		json.tooltip = tooltip;
+		json.xAxis = xAxis;
+		json.yAxis = yAxis;  
+		json.series = series;
+		json.plotOptions = plotOptions;
+		json.legend = legend;
+		json.credits = credits;
+		$('#chart').highcharts(json);
+
+		// End Column Chart
+
+
+		// Pie Chart
+		pie_json = {
+			chart: {
+	            plotBackgroundColor: '#f44336',
+	            backgroundColor: '#f44336',
+	            plotBorderWidth: null,
+	            plotShadow: false,
+	            type: 'pie'
+	        },
+	        title: {
+	            text: '2016-17',
+	            style: {color: 'white'}
+	        },
+	        // tooltip: {
+	        //     pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+	        // },
+	        plotOptions: {
+	            pie: {
+	                allowPointSelect: true,
+	                cursor: 'pointer',
+	                dataLabels: {
+	                    enabled: false
+	                },
+	                showInLegend: false,
+	                borderColor: 'null'
+	            }
+	        },
+	        series: [{
+			    name: '',
+			    data: [{name: "", y: 0.6, color: "#f44336"}],
+			},
+			{
+			    name: '',
+			    data: [{name: "Placed", y: 0.8, color: 'white'},{name: "", y: 0.2, color: "#ffcdd2"}],
+			    innerSize: '80%'
+			}]
+		}
+		$('#pie-chart-16-17').highcharts(pie_json);
+		$('#pie-chart-15-16').highcharts(pie_json);
+		$('#pie-chart-14-15').highcharts(pie_json);
+	}
+
+	</script>
+	
+
+</head>
+
+<body onload="init_charts()" style="background:#F8F7DF;">
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-inverse hidden-xs" style="background-color:#F8F7DF;padding:10px;">
+			<div class="row">
+				<span class="col-lg-2 col-md-2 col-sm-3" style="margin-right:-50px;margin-top:5px;margin-left:20px">
+					<img class="img-reponsive" src="img/logo.png" width="70%" height="16%" alt="">
+				</span>
+				<span class="col-lg-6 col-md-7 col-sm-9" style="padding:0px;color:#E0E0E0;">
+					
+					<h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F">National Institute of Technology Karnataka, Surathkal</h3>
+					<h3  style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F"><strong>DEPARTMENT OF INFORMATION TECHNOLOGY</strong></h3>
+				</span>
+				<div class="col-lg-4 col-md-3 hidden-sm" style="color:white;line-height:15px;text-align:right;">
+					<form class="navbar-form" role="search" style="padding:0px;">
+						<div class="input-group add-on">
+							<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default" style="padding:9px;background-color:#48282F" type="submit"><i class="glyphicon glyphicon-search" style="color:white;"></i></button>
+							</div>
+						</div>
+					</form>
+					
+				</div>
+			</div>
+			<div class="hidden-lg" style="margin-bottom:10px;"></div>
+		</div>
+		<div class="container-fluid">
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:white;">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" style="font-size: 20px;">
+					<span class="visible-xs" style="display:inline">
+						<img style="max-width:100px; margin-top: -12px;" src="img/logo10.png" height="45px">
+					</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Programmes<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Courses<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Facilities<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Research/Consultancy<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Achievements<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">Events<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Sub Page 1</a></li>
+							<li><a href="#">Sub Page 2</a></li>
+						</ul>
+					</li>
+					
+					<li><a href="#">Placements</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Content -->
+	<main>
+
+
+	<div class="container">
+		<h1>Placement Statistics</h1><br>
+
+		<div class="row">
+			<div class="col-sm-12 mchart">
+				<div class="mchart-title">Pay Statistics</div>
+				<div class="mchart-chart" id="chart"></div>
+			</div>
+		</div>
+		<br>
+		<div class="row pies">
+			<div class="col-sm-12"><h2>Placed Percentage</h2></div>
+			<div class="col-sm-12 col-md-3 mpie">
+				<div id="pie-chart-16-17"></div>
+			</div>
+			<div class="col-sm-12 col-md-3 mpie">
+				<div id="pie-chart-15-16"></div>
+			</div>
+			<div class="col-sm-12 col-md-3 mpie">
+				<div id="pie-chart-14-15"></div>
+			</div>
+		</div>
+
+	</div>
+		
+	</main>
+
+
+	<!-- Footer -->
+	<footer class="row-footer" style="margin-top:20px;background-color: black">
+		<div class='container'>
+			<div class='row'>
+				<div class='col-lg-3 col-md-3 col-sm-3 col-xs-6 col-md-offset-3' >
+					<h4 style= "color:white">Contact Us</h4>
+					<h6 style="color:red">G.Ram Mohan Reddy<h6>
+					<ul class="list-unstyled" style="color: grey">
+						<li>Professor and Head</li>
+						<li>Department of Information Technology</li>
+						<li>P.O. Srinivasnagar,Mangalore - 575 025</li>
+						<li> Karnataka, India.</li>
+						<li>Phone: +91-824-2474056</li>
+						<li>Email: infotech[AT]nitk[DOT]ac[DOT]in<br>
+							infotech[AT]nitk[DOT]edu[DOT]in</li>
+					</ul>
+					<h6 style="color:red">Soumya Kamath S<span style="color:grey">(Web Admin)</span><h6>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
