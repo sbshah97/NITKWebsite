@@ -21,197 +21,18 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 
-	<style type="text/css">
-		
-		.list {
-			padding-left: 15 !important;
-		}
-
-		.col-lg-4 {
-			padding-left:  8 !important;
-			padding-right: 8 !important;
-		}
-
-		main {
-			margin-top: 5%;
-		}
-
-		#about .panel-heading {
-			height: 300px;
-			color: white;
-			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
-			background-position: center center;
-			background-repeat: no-repeat;
-		}
-
-		.mchart {
-			width: 100%;
-			display: block;
-		}
-
-		.mchart-title {
-			background-color: white;
-			padding-top: 10px;
-			padding-bottom: 10px;
-			padding-left: 20px;
-			color: rgba(0, 0, 0, 0.6);
-			font-size: 200%;
-		}
-
-		.pies h2{
-			color: rgba(0, 0, 0, 0.6);
-		}
-
-		.mchart-chart {
-			height: 400px;
-			width: 100%;
-			color: white;
-		}
-
-		.mpie div {
-			display: inline-block;
-			width: 100%;
-		}
-
-	</style>
-
+	<link rel="stylesheet" type="text/css" href="css/placements.css">
+	<script type="text/javascript" src="js/placements.js"></script>
 
 	<script type="text/javascript">
+		
+		$( document ).ready(function() {
+			$('#chart').draw_pay_chart();
+			$('#pie-chart-16-17').draw_pie_chart();
+			$('#pie-chart-15-16').draw_pie_chart();
+			$('#pie-chart-14-15').draw_pie_chart();
+		});
 
-	function draw_pay_chart(years, avgPay, highestPay){
-
-
-		// Column Chart
-
-		var chart = {
-		type: 'column',
-		backgroundColor: '#81d4fa',
-		style : {
-			color: 'rgba(0, 0, 0, 0.7)'
-		}
-		};
-		var title = {
-		text: 'Pay Statistics',
-		style : {color: 'rgba(0, 0, 0, 0)'}
-		};
-		var xAxis = {
-		categories: years,
-		title: {
-		 text: null
-		},
-		labels: {
-			style : {color: 'rgba(0, 0, 0, 0.7)'}
-		}
-		};
-		var yAxis = {
-		min: 0,
-		title: {
-		 text: 'Average pay',
-		 align: 'high',
-		 style : {color: 'rgba(0, 0, 0, 0.7)'}
-		},
-		labels: {
-		 overflow: 'justify'
-		},
-		gridLineColor: 'rgba(0, 0, 0, 0)',
-		labels: {
-			style : {color: 'rgba(0, 0, 0, 0.7)'}
-		}
-		};
-		var tooltip = {
-		valueSuffix: ' lakhs'
-		};
-		var plotOptions = {
-		bar: {
-		 dataLabels: {
-		    enabled: true
-		 }
-		}
-		};
-		var legend = {
-		layout: 'vertical',
-		align: 'right',
-		verticalAlign: 'top',
-		floating: true,
-		borderWidth: 1,
-		backgroundColor: ((Highcharts.theme && Highcharts.theme.legendBackgroundColor) || '#FFFFFF'),
-		borderColor: null
-		};
-		var credits = {
-		enabled: false
-		};
-
-		var series= [{
-		    name: 'Average Pay',
-		    data: avgPay,
-		    borderColor: 'rgba(0, 0, 0, 0)',
-		    color: '#03a9f4'
-		}, {
-		    name: 'Highest Pay',
-		    data: highestPay,
-		    borderColor: 'rgba(0, 0, 0, 0)',
-		    color: '#0288d1'
-		}
-		];     
-
-		var json = {};   
-		json.chart = chart; 
-		json.title = title;   
-		json.tooltip = tooltip;
-		json.xAxis = xAxis;
-		json.yAxis = yAxis;  
-		json.series = series;
-		json.plotOptions = plotOptions;
-		json.legend = legend;
-		json.credits = credits;
-		$('#chart').highcharts(json);
-
-		// End Column Chart
-      }
-
-       function draw_placed_pie(year,placedPercentage){
-		// Pie Chart
-		pie_json = {
-			chart: {
-	            plotBackgroundColor: '#f44336',
-	            backgroundColor: '#f44336',
-	            plotBorderWidth: null,
-	            plotShadow: false,
-	            type: 'pie'
-	        },
-	        title: {
-	            text: year,
-	            style: {color: 'white'}
-	        },
-	         //tooltip: {
-	           //  pointFormat: ' <b>{point.percentage:.1f}%</b>'
-	         //},
-	        plotOptions: {
-	            pie: {
-	                allowPointSelect: true,
-	                cursor: 'pointer',
-	                dataLabels: {
-	                    enabled: false
-	                },
-	                showInLegend: true,
-	                borderColor: 'null'
-	            }
-	        },
-	        series: [{
-			    name: '',
-			    data: [{name: "", y: 0.6, color: "#f44336"}],
-			},
-			{
-			    name: '',
-			    data: [{name: "Placed", y: placedPercentage, color: 'white'},{name: "Not placed", y: 100-placedPercentage, color: "#ffcdd2"}],
-			    innerSize: '0%'
-			}]
-		}
-		$('#pie-chart-16-17').highcharts(pie_json);
-		$('#pie-chart-15-16').highcharts(pie_json);
-		$('#pie-chart-14-15').highcharts(pie_json);
-	}
-  
 	</script>
 	
 
@@ -328,10 +149,10 @@
 		<div class="row">
 			<div class="col-sm-12 mchart">
 				<div class="mchart-title">Pay Statistics</div>
-				<div class="mchart-chart" id="chart">
-					<script>
-					 draw_pay_chart(['2016-17', '2015-16', '2014-15'], [22, 20, 30], [10, 9, 9]);
-					 </script> 
+				<div class="mchart-chart" id="chart" data-years="2016-17,2015-16,2014-15" data-avg-pay="22,20,30" data-high-pay="10,9,9">
+					<!-- <script>
+						draw_pay_chart(['2016-17', '2015-16', '2014-15'], [22, 20, 30], [10, 9, 9]);
+					</script>  -->
 				</div>
 			</div>
 		</div>
@@ -339,25 +160,15 @@
 		<div class="row pies">
 			<div class="col-sm-12"><h2>Placed Percentage</h2></div>
 			<div class="col-sm-12 col-md-3 mpie">
-				
-				<div id="pie-chart-16-17">
-				<script>
- 				 draw_placed_pie('2016-17',90);
-				</script>
+				<div id="pie-chart-16-17" data-year="2016-17" data-percent="90">
+				</div>
+			</div>
+			<div class="col-sm-12 col-md-3 mpie" >
+				<div id="pie-chart-15-16" data-year="2015-16" data-percent="92">
 				</div>
 			</div>
 			<div class="col-sm-12 col-md-3 mpie">
-				<div id="pie-chart-15-16">
-				<script>
- 				 draw_placed_pie('2015-16',92);
-				</script>
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-3 mpie">
-				<div id="pie-chart-14-15">
-				<script>
- 				 draw_placed_pie('2014-15',70);
-				</script>
+				<div id="pie-chart-14-15" data-year="2014-15" data-percent="70">
 				</div>
 			</div>
 		</div>
