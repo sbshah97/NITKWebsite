@@ -8,8 +8,8 @@
 	* Sowmya Kamath
 
 ## Contributors
-	* Salman Shah
-	* Hrishi Hiraskar
+	* Salman Shah - Project Lead
+	* Hrishi Hiraskar - Project Lead
 	* Rashika Chowlek
 	* Hafeez Ali
 	* Priyam
@@ -18,6 +18,8 @@
 	* Mishal Shah
 	* Moksh Jain
 	* Utkarsh
+	* Manali Shah
+	* Manali Gala
 	
 ## LICENSE
 * Work for this repository is the work of the owners only. In no manner should any of the source code be replicated except for use in the NITK Website itself!
