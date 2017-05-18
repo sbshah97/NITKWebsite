@@ -4,6 +4,7 @@
 - This repository contains designs for the NITK Website!
 
 ## Mentors
+	* SS Kamath Sir
 	* Mohit Tahilyani
 	* Sowmya Kamath
 
