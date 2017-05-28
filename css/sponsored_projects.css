@@ -1,0 +1,46 @@
+footer{
+	margin: auto 0px;
+	padding: 20px 0px 20px 0px;
+	position: relative;
+
+}
+.container1{
+	padding-left: 50px;
+	padding-right: 50px;
+}
+h3{
+	padding-left: 50px; 
+}
+h4{
+	text-align: center;
+}
+.linktop{
+	font-size: 12px;
+	padding-left: 50px;
+	color: silver;
+}
+.toggle-menu{
+	padding-left: 52px;
+}
+a.a-link{
+	color: blue;
+}
+.para{
+	padding-left: 52px;
+}
+.dept{
+	padding-left: 50px;
+}
+.table{
+	background-color: white;
+	border: 2px solid #000000;
+}
+
+@media only screen and (max-width : 640px){
+	.container1 , .linktop , .toggle-menu, .para , .dept , .table {
+		padding-left: 5px;
+	}
+	h3 , h4 , a{
+		padding-left: 5px;
+	}
+}

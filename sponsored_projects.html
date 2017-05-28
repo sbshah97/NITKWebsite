@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<link rel="icon" href="favicon.ico">
+
+	<title>Sponsored Projects</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/sponsored_projects.css">
+	<!-- Custom styles for this template -->
+	<!--<link href="navbar-fixed-top.css" rel="stylesheet">-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background:#F8F7DF;">
+
+	<!-- Fixed navbar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-inverse hidden-xs" style="background-color:#F8F7DF;padding:10px;">
+			<div class="row" style="margin: 0;">
+				<span class="col-lg-2 col-md-2 col-sm-3" style="margin-right:-50px;margin-top:5px;margin-left:20px">
+					<img class="img-reponsive" src="img/logo.png" width="70%" height="16%" alt="">
+				</span>
+				<span class="col-lg-6 col-md-7 col-sm-9" style="padding:0px;color:#E0E0E0;">
+					<h3 style="display:inline-block;margin:15px 0px -10px 0px;color:#8B785F"><img src = "img/hindi_nitksurathkal.png"/></h3>
+					<h3 style="display:inline-block;margin:15px 0px -10px 0px;color:#0088cc">National Institute of Technology Karnataka, Surathkal</h3>
+				</span>
+				<div class="col-lg-4 col-md-3 hidden-sm" style="color:white;line-height:15px;text-align:right;">
+					<form class="navbar-form" role="search" style="padding:0px;">
+						<div class="input-group add-on">
+							<input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+							<div class="input-group-btn">
+								<button class="btn btn-default" style="padding:9px;background-color:#48282F" type="submit"><i class="glyphicon glyphicon-search" style="color:white;"></i></button>
+							</div>
+						</div>
+					</form>
+					<p style="color:#8B785F">Virtual Tour</p>
+					<p style="color:#8B785F">Institute telphone Directory</p>
+					<p style="color:#8B785F">Contact</p>
+				</div>
+			</div>
+			<div class="hidden-lg" style="margin-bottom:10px;"></div>
+		</div>
+		<div class="container-fluid">
+			<div class="navbar-header ">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="color:white;">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#" style="font-size: 20px;">
+					<span class="visible-xs" style="display:inline">
+						<img style="max-width:100px; margin-top: -12px;" src="img/logo10.png" height="45px">
+					</span>
+				</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Academics</a></li>
+					<li><a href="#">Admissions</a></li>
+					<li><a href="#">Department</a></li>
+					<li><a href="#">Faculty</a></li>
+					<li><a href="#">Student</a></li>
+					<li><a href="#">Research</a></li>
+					<li><a href="#">Placement</a></li>
+					<li><a href="#">Central Facilities</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!--End of fixed navbar -->
+	<main>
+	<!-- Main view starts here -->
+		<h3><strong>Sponsored Projects</strong></h3>
+		<p class="linktop"><a href="index.html" class="a-link">Home</a>&nbsp/ &nbsp&nbsp Sponsored Projects</p>
+		<div class="para">
+			<p>
+				Currently, there are <strong>77 on-going sponsored research projects</strong> which are being carried out across all the departments and the funding is to the tune of <strong>INR 55.25 Crores.</strong>
+			</p>
+		</div>
+		<div class="toggle-menu">
+			<select id="Department" onchange="openDept(this.value)">
+				<option value="0">Select Department</option>
+				<option value="1">Applied Mechanics & Hydraulics</option>
+				<option value="2">Chemical Engineering</option>
+				<option value="3">Chemistry</option>
+				<option value="4">Civil Engineering</option>
+				<option value="5">Computer Science & Engineering</option>
+				<option value="6">Electrical & Electronics Engineering</option>
+				<option value="7">Electronics & Communication Engineering</option>
+				<option value="8">School of Management</a></option>
+				<option value="9">Information Technology</option>
+				<option value="10">Mathematical & Computational Sciences</option>
+				<option value="11">Mechanical Engineering</option>
+				<option value="12">Metallurgical Engineering</option>
+				<option value="13">Mining Engineering</option>
+				<option value="14">Physics</option>
+			</select>
+		</div>
+		<p></p>
+		 <!-- <h4>Selected Department</h4> -->
+		<div class="container1">
+			<div class="tab-content">
+				<ul class="nav nav-tabs">
+					<li class="active"><a data-toggle="tab" href="#completed">Completed</a></li>
+					<li><a data-toggle="tab" href="#ongoing">Ongoing</a></li>
+				</ul>
+
+				<div id="completed" class="tab-pane fade in active">
+					<br>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<td>Sl. No</td>
+								<td>Faculty Name</td>
+								<td>Project Title</td>
+								<td>Grant(INR in lakhs)</td>
+								<td>Department</td>
+								<td>Funding Agency</td>
+								<td>Start Year</td>
+								<td>End Year</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>ABC</td>
+								<td>DEF</td>
+								<td>32</td>
+								<td>MNO</td>
+								<td>ACC</td>
+								<td>2005</td>
+								<td>2010</td>
+							</tr>
+						</thead>
+					</table>
+					<p id="done"></p>
+				</div>
+
+				<div id="ongoing" class="tab-pane fade">
+					<br>
+					<table class="table table-bordered">
+						<thead>
+							<tr>
+								<td>Sl. No</td>
+								<td>Faculty Name</td>
+								<td>Project Title</td>
+								<td>Grant(INR in lakhs)</td>
+								<td>Department</td>
+								<td>Funding Agency</td>
+								<td>Start Year</td>
+								<td>End Year</td>
+							</tr>
+							<tr>
+								<td>1</td>
+								<td>YYY</td>
+								<td>XXX</td>
+								<td>40</td>
+								<td>CVP</td>
+								<td>MNC</td>
+								<td>2015</td>
+								<td>2018</td>
+							</tr>
+						</thead>
+					</table>
+				</div>
+			</div>
+		</div>
+	<!-- Main view ends here -->
+	</main>
+	<script>
+		function openDept(dept){
+			var dep, db, xmlhttp, mydep, x, txt ="";
+			dep={"table":dept};
+			db=JSON.stringify(dep);
+			xmlhttp = new XMLHttpRequest();
+			xmlhttp.onreadystatechange=function(){
+				if(this.readyState == 4 && this.status == 200){
+					mydep = JSON.parse(this.responseText);
+					txt += "<table class="table table-bordered">"
+					for(x in mydep){
+					txt += "<tr><td>" + mydep[x].no + "</td></tr>";
+				}
+				txt += "</table>"
+				document.getElementById("done").innerHTML = txt;
+			}
+		};
+		xmlhttp.open("POST","completed_projects.php",true);
+		xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+		xmlhttp.send("x=" + db);
+	</script>
+</body>
+</html>
+<!--
+txt += "<tr><td>" + mydep[x].no + "</td><td>"+ mydep[x].fname + "</td><td>" + mydep[x].ptitle + "</td><td>" + mydep[x].grant + "</td><td>" + mydep[x].department + "</td><td>" + mydep[x].fagency + "</td><td>" + mydep[x].syear + "</td><td>" + mydep[x].eyear "</td></tr>";
+
+-->
