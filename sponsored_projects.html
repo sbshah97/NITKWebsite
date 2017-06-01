@@ -114,70 +114,82 @@
 		<div class="container1">
 			<div class="tab-content">
 				<ul class="nav nav-tabs">
-					<li class="active"><a data-toggle="tab" href="#completed">Completed</a></li>
-					<li><a data-toggle="tab" href="#ongoing">Ongoing</a></li>
+					<li class="active"><a data-toggle="tab" href="#completed">Completed <span class="badge">2</span></a></li>
+					<li><a data-toggle="tab" href="#ongoing">Ongoing <span class="badge">2</span></a></li>
 				</ul>
 
 				<div id="completed" class="tab-pane fade in active">
 					<br>
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<td>Sl. No</td>
-								<td>Faculty Name</td>
-								<td>Project Title</td>
-								<td>Grant(INR in lakhs)</td>
-								<td>Department</td>
-								<td>Funding Agency</td>
-								<td>Start Year</td>
-								<td>End Year</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>ABC</td>
-								<td>DEF</td>
-								<td>32</td>
-								<td>MNO</td>
-								<td>ACC</td>
-								<td>2005</td>
-								<td>2010</td>
-							</tr>
-						</thead>
-					</table>
-					<p id="done"></p>
+					<button class="accordion">ABC</button>
+					<div class="panel">
+					<p></p>
+					<p>
+						<strong>Faculty Incharge</strong> : A<br>
+						<strong>Grant(in lakhs)</strong> :<br>
+						<strong>Funding Agency</strong> :<br>
+						<strong>Start Year</strong>:<br>
+						<strong>End Year</strong>:<br>
+					</p>
+					</div>
+					<button class="accordion">DEF</button>
+					<div class="panel">
+					<p></p>
+					<p>	
+						<strong>Faculty Incharge</strong> : B<br>
+						<strong>Grant(in lakhs)</strong> :<br>
+						<strong>Funding Agency</strong> :<br>
+						<strong>Start Year</strong>:<br>
+						<strong>End Year</strong>:<br>
+					</p>
+					</div>
 				</div>
 
 				<div id="ongoing" class="tab-pane fade">
 					<br>
-					<table class="table table-bordered">
-						<thead>
-							<tr>
-								<td>Sl. No</td>
-								<td>Faculty Name</td>
-								<td>Project Title</td>
-								<td>Grant(INR in lakhs)</td>
-								<td>Department</td>
-								<td>Funding Agency</td>
-								<td>Start Year</td>
-								<td>End Year</td>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>YYY</td>
-								<td>XXX</td>
-								<td>40</td>
-								<td>CVP</td>
-								<td>MNC</td>
-								<td>2015</td>
-								<td>2018</td>
-							</tr>
-						</thead>
-					</table>
+					<button class="accordion">MNO</button>
+					<div class="panel">
+					<p></p>
+					<p>
+						<strong>Faculty Incharge</strong> : M<br>
+						<strong>Grant(in lakhs)</strong> :<br>
+						<strong>Funding Agency</strong> :<br>
+						<strong>Start Year</strong>:<br>
+						<strong>End Year</strong>:<br>
+					</p>
+					</div>
+					<button class="accordion">QRS</button>
+					<div class="panel">
+					<p></p>
+					<p>	
+						<strong>Faculty Incharge</strong> : N<br>
+						<strong>Grant(in lakhs)</strong> :<br>
+						<strong>Funding Agency</strong> :<br>
+						<strong>Start Year</strong>:<br>
+						<strong>End Year</strong>:<br>
+					</p>
+					</div>
 				</div>
 			</div>
 		</div>
 	<!-- Main view ends here -->
 	</main>
+	<script>
+	var acc = document.getElementsByClassName("accordion");
+	var i;
+
+	for (i = 0; i < acc.length; i++) {
+  		acc[i].onclick = function() {
+    		this.classList.toggle("active");
+    		var panel = this.nextElementSibling;
+    		if (panel.style.maxHeight){
+      			panel.style.maxHeight = null;
+    		} else {
+      		panel.style.maxHeight = panel.scrollHeight + "px";
+    	} 
+	}
+}
+
+	</script>
 	<script>
 		function openDept(dept){
 			var dep, db, xmlhttp, mydep, x, txt ="";
