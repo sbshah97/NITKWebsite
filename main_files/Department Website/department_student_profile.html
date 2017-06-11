@@ -38,25 +38,6 @@
 		border-radius: 4px;
 	}
 
-	.student-profile .fa-pencil {
-		position: absolute;
-		font-size: 150%;
-		top: 25px;
-		left: 65px;
-		background-color: white;
-		color: #222;
-		border-radius: 100%;
-		z-index: 100;
-		opacity: 0.2;
-		-webkit-transition: all .3s ease-out;
-		-o-transition: all .3s ease-out;
-		transition: all .3s ease-out;
-	}
-
-	.student-profile-pic:hover + .fa-pencil {
-		opacity: 1;
-	}
-
 	.student-profile .student-links {
 		position: absolute;
 		right: 50px;
@@ -131,28 +112,34 @@
 			</div>
 			<div class="collapse navbar-collapse" id="myNavbar">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li class="active"><a href="#">Academics</a></li>
-					<li><a href="#">Admissions</a></li>
-					<li><a href="#">Department</a></li>
-					<li><a href="#">Faculty</a></li>
-					<li><a href="#">Student</a></li>
-					<li><a href="#">Research</a></li>
-					<li><a href="#">Placement</a></li>
-					<li><a href="#">Central Facilities</a></li>
+					<li><a href="department_index.html">Home</a></li>
+					<li><a href="department_programmes.html">Programmes</a></li>
+					<li><a href="department_course.html">Courses</a></li>
+					<li class="dropdown">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="department_faculty_profile.html">Faculty</a></li>
+							<li><a href="department_student_profile.html">Students</a></li>
+							<li><a href="department_non_teaching_faculty_profile.html">Non-Teaching Faculty</a></li>
+						</ul>
+					</li>
+					<li><a href="department_facilities.html">Facilities</a></li>
+					<li><a href="department_research.html">Research</a></li>
+					<li><a href="department_achievements.html">Achievements</a></li>
+					<li><a href="department_events.html">Events</a></li>					
+					<li><a href="department_placements.html">Placements</a></li>
+					<li><a href="department_contact_us.html">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-
 	<div class="container student-profile">
 		<img class="student-profile-pic" src="img/DefaultUserPic.png"/>
-		<i class="fa fa-pencil"></i>
 		<div class="student-links">
 			<a href="" id="student-link-github"><i class="fa fa-linkedin"></i></a>
 			<a href="" id="student-link-github"><i class="fa fa-github"></i></a>
-			<a href="" id="student-link-github"><i class="fa fa-globe"></i></a>
+			<a href="" id="student-link-github"><i class="fa fa-globe">&nbsp;&nbsp;</i></a>
 		</div>
 		<div class="panel panel-default">
 			<div class="panel-heading student-name"><h3>Student Name</h3></div>
@@ -175,7 +162,7 @@
 					<div class="panel-heading"><i class="fa fa-align-justify">&nbsp;&nbsp;</i>Projects</div>
 					<div class="panel-body">
 						<p>
-							<textarea class="form-control" rows="5" id="comment"></textarea>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 					</div>
 				</div>
@@ -184,7 +171,7 @@
 					<div class="panel-heading"><i class="fa fa-star">&nbsp;&nbsp;</i>Internship Experiences</div>
 					<div class="panel-body">
 						<p>
-							<textarea class="form-control" rows="5" id="comment"></textarea>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 					</div>
 				</div>
@@ -193,7 +180,7 @@
 					<div class="panel-heading"><i class="fa fa-flag">&nbsp;&nbsp;</i>Startups Started</div>
 					<div class="panel-body">
 						<p>
-							<textarea class="form-control" rows="5" id="comment"></textarea>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 						</p>
 					</div>
 				</div>
@@ -204,10 +191,6 @@
 						<p>
 							<span class="label label-default"><a style="color: white;" href="/sites/default/files/public/RTI/RTI-Docs/RTI order repeat RTIs.pdf">Letter 1</a></span>
 							<span class="label label-default"><a style="color: white;" href="/sites/default/files/public/RTI/RTI-Docs/RTI order repeat RTIs.pdf">Letter 2</a></span>
-							<button type="button" class="btn btn-primary pull-right">
-								<a href="#!" style="color: white">Add</a>&nbsp;
-								<i class="fa fa-plus"></i>
-							</button>
 						</p>
 					</div>
 				</div>
@@ -218,17 +201,13 @@
 						<p>
 							<span class="label label-default"><a style="color: white;" href="/sites/default/files/public/RTI/RTI-Docs/RTI order repeat RTIs.pdf">Paper 1</a></span>
 							<span class="label label-default"><a style="color: white;" href="/sites/default/files/public/RTI/RTI-Docs/RTI order repeat RTIs.pdf">Paper 2</a></span>
-							<button type="button" class="btn btn-primary pull-right">
-								<a href="#!" style="color: white">Add</a>&nbsp;
-								<i class="fa fa-plus"></i>
-							</button>
 						</p>
 					</div>
 				</div>
 
 				<button type="button" class="btn btn-primary">
-					<a href="#!" style="color: white">Update Resume</a>&nbsp;
-					<i class="fa fa-file-pdf-o"></i>
+					<a href="#!" style="color: white">Resume</a>&nbsp;
+					<i class="fa fa-file-pdf-o">&nbsp;&nbsp;</i>
 				</button>
 
 			</div>

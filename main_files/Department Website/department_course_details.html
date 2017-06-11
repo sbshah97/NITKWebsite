@@ -1,16 +1,15 @@
+<!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<meta name="description" content="">
-	<meta name="author" content="">
-	<link rel="icon" href="ficon.ico">
+	<!-- meta data-->
+	<meta name="description" content="Courses offered by the Department of Information Technology, National Institute of Technology Karnataka">
+	<link rel="icon" href="favicon.ico">
 
-	<title>Placements | Departmemt of Information Technology</title>
+	<title>Course IT253 | Department of Information Technology</title>
 
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,28 +18,11 @@
 	<link href="navbar-fixed-top.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-	<script src="https://code.highcharts.com/highcharts.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/placements.css">
-	<script type="text/javascript" src="js/placements.js"></script>
-
-	<script type="text/javascript">
-		
-		$( document ).ready(function() {
-			$('#chart').draw_pay_chart();
-			$('#pie-chart-16-17').draw_pie_chart();
-			$('#pie-chart-15-16').draw_pie_chart();
-			$('#pie-chart-14-15').draw_pie_chart();
-		});
-
-	</script>
-	
 
 </head>
-
-<body style="background:#F8F7DF;">
-
-	<!-- Fixed navbar -->
+<body style="background: #F8F7DF;">
+	
+	<!-- fixed navbar -->
 	<nav class="navbar navbar-inverse">
 		<div class="container-inverse hidden-xs" style="background-color:#F8F7DF;padding:10px;">
 			<div class="row">
@@ -103,46 +85,61 @@
 		</div>
 	</nav>
 
-	<!-- Content -->
 	<main>
-
-
-	<div class="container">
-		<h1>Placement Statistics</h1><br>
-
-		<div class="row">
-			<div class="col-sm-12 mchart">
-				<div class="mchart-title">Pay Statistics</div>
-				<div class="mchart-chart" id="chart" data-years="2016-17,2015-16,2014-15" data-avg-pay="22,20,30" data-high-pay="10,9,9">
-					<!-- <script>
-						draw_pay_chart(['2016-17', '2015-16', '2014-15'], [22, 20, 30], [10, 9, 9]);
-					</script>  -->
-				</div>
+		<div class="container content">
+			<div class="row course-head">
+				<span class="course-title">Course Title</span><br>
+				<span class="course-code">XY123</span>
+			</div>
+			<br>
+			<div class="row">
+				<p><span class="course-info">Programme: </span> B. Tech</p>
+			</div>
+			<div class="row">
+				<p><span class="course-info">Department: </span> XY </p>
+			</div>
+			<div class="row">
+				<p><span class="course-info">Semester: </span> First </p>
+			</div>
+			<div class="row">
+				<p><span class="course-info">Category: </span> Program Core (PC)</p>
+			</div>
+			<div class="row">
+				<p><span class="course-info">Credits: </span> 3-0-0 </p>
+			</div>
+			<div class="row">
+				<p><span class="course-info">Contents: </span></p>
+				<ul class="course-contents">
+					<li>Content #1</li>
+					<li>Content #2</li>
+					<li>Content #3</li>
+					<li>Content #4</li>
+					<li>Content #5</li>
+					<li>Content #6</li>
+					<li>Content #7</li>
+					<li>Content #8</li>
+					<li>Content #9</li>
+				</ul>
+			</div>
+			<div class="row">
+				<p><span class="course-info">References: </span></p>
+				<ul class="course-references">
+					<li>Reference #1</li>
+					<li>Reference #2</li>
+					<li>Reference #3</li>
+				</ul>
+			</div>
+			<div class="row">
+				<p><span class="course-info">Instructor(s): </span></p>
+				<ul class="course-instructors">
+					<li>Instructor #1</li>
+					<li>Instructor #2</li>
+					<li>Instructor #3</li>
+				</ul>
 			</div>
 		</div>
-		<br>
-		<div class="row pies">
-			<div class="col-sm-12"><h2>Placed Percentage</h2></div>
-			<div class="col-sm-12 col-md-3 mpie">
-				<div id="pie-chart-16-17" data-year="2016-17" data-percent="90">
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-3 mpie" >
-				<div id="pie-chart-15-16" data-year="2015-16" data-percent="92">
-				</div>
-			</div>
-			<div class="col-sm-12 col-md-3 mpie">
-				<div id="pie-chart-14-15" data-year="2014-15" data-percent="70">
-				</div>
-			</div>
-		</div>
+	</main> 
 
-	</div>
-		
-	</main>
-
-
-	<!-- Footer -->
 	<footer class="row-footer" style="margin-top:20px;background-color: black">
 		<div class='container'>
 			<div class='row'>
@@ -164,6 +161,42 @@
 		</div>
 	</footer>
 
+	<style>
+		.content {
+			background-color: #FFF;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: 1px solid #48282F;
+		}
 
+		.course-title {
+			font-size: 30px;
+			font-weight: normal;
+			padding-bottom: 0px;
+		}
+
+		.course-code {
+			font-size: 20px;
+			font-weight: normal;
+			padding-bottom: 0px;
+		}
+
+		.course-head {
+			padding-left: 20px;
+			font-weight: bolder;
+			color: #222;
+		}
+
+		.course-info {
+			padding-left: 25px;
+			font-weight: bolder;
+			color: #48282F;
+		}
+
+		.course-contents, .course-references, .course-instructors {
+			list-style-type: disc;
+			padding-left: 50px;
+		}
+	</style>
 </body>
 </html>

@@ -14,7 +14,7 @@
 
 	<!-- Bootstrap core CSS -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="stylesheet.css" rel="stylesheet">
+	<link href="css/stylesheet.css" rel="stylesheet">
 	<!-- Custom styles for this template -->
 	<link href="navbar-fixed-top.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -24,7 +24,7 @@
 </head>
 
 <body style="background:#F8F7DF;">
-	
+
 	<header>
 		<!-- fixed navbar -->
 		<nav class="navbar navbar-inverse">
@@ -67,16 +67,23 @@
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
-						<li><a href="#">Home</a></li>
-						<li><a href="#">Programmes</a></li>
-						<li><a href="#">Courses</a></li>
-						<li><a href="#">People</a></li>
-						<li><a href="#">Facilities</a></li>
-						<li><a href="#">Research</a></li>
-						<li><a href="#">Achievements</a></li>
-						<li><a href="#">Events</a></li>					
-						<li><a href="#">Placements</a></li>
-						<li><a href="#">Contact</a></li>
+						<li><a href="department_index.html">Home</a></li>
+						<li><a href="department_programmes.html">Programmes</a></li>
+						<li><a href="department_course.html">Courses</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">People<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="department_faculty_profile.html">Faculty</a></li>
+								<li><a href="department_student_profile.html">Students</a></li>
+								<li><a href="department_non_teaching_faculty_profile.html">Non-Teaching Faculty</a></li>
+							</ul>
+						</li>
+						<li><a href="department_facilities.html">Facilities</a></li>
+						<li><a href="department_research.html">Research</a></li>
+						<li><a href="department_achievements.html">Achievements</a></li>
+						<li><a href="department_events.html">Events</a></li>					
+						<li><a href="department_placements.html">Placements</a></li>
+						<li><a href="department_contact_us.html">Contact</a></li>
 					</ul>
 				</div>
 			</div>
@@ -142,7 +149,7 @@
 				</div>
 			</div>
 		</div>
-		
+
 	<!--Footer content-->
 	<footer class="row-footer" style="margin-top:20px;background-color: black">
 		<div class='container'>
