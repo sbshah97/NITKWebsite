@@ -10,41 +10,56 @@
 			<meta name="author" content="">
 			<link rel="icon" href="ficon.ico">
 
-			<title>Programmes | Departmemt of Information Technology</title>
+			<title>Department Programmes | Departmemt of Information Technology</title>
 
 			<!-- Bootstrap core CSS -->
 			<link href="css/bootstrap.min.css" rel="stylesheet">
 			<link href="css/stylesheet.css" rel="stylesheet">
 			<!-- Custom styles for this template -->
-			<link href="navbar-fixed-top.css" rel="stylesheet">
-			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<link href="css/navbar-fixed-top.css" rel="stylesheet">
 			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-			<link rel="stylesheet" type="text/css" href="css/placements.css">
-			<script type="text/javascript" src="js/placements.js"></script>
 			<style>
 			.tab-content{
-				background-image: url("img/it_dept.jpg");
+				/*background-image: url("img/it_dept.jpg");
 				background-repeat: repeat-x;
 				background-size: contain;
-				font-size: large;
+				/*background-attachment: fixed;
+				*/
+				background: transparent;
+				margin-top: 0px;
+				text-align: left;
+				border-radius: 20px;
 			}
 
 			#btech,#mtech,#phd {
-				background : rgba(255,255,255,.9);
-				margin : 10px 80px 10px 80px;
+				background : rgba(242, 115, 65, 0.2);
+				margin : 50px 8px 0px 8px;
+				border-top-right-radius:  30px;
+				border-bottom-left-radius: 30px;
+				box-shadow: 10px 10px 5px #48282f;
 			}
 			.panel-title {
 				font-color : #48248f;
+				border-bottom-left-radius: 30px;
+				border:1px solid #f6ddbf;
+				font-size : 20px;
 			}
 			.subhead {
-				background-color : RGBA(16, 240, 0, 0.66);
-				margin-bottom : 10px;
-				padding-bottom: 8px;
+				margin-bottom : 18px;
+				padding-bottom: 5px;
 				padding-top: 8px;
-				font-family: serif;
-				font-size: 40px;
+				border : 2px black;
+				padding-left: 12px;
+				font-size: 28px;
+				box-shadow: 0px 8px 10px -8px #48282f;
+				border-top-right-radius: 30px;
+				border-bottom-left-radius: 30px;
+			}
+			.nav-pills {
+				margin-bottom: -20px;
+				margin-top: 40px;
 			}
 			
 			ul.interests > li {
@@ -54,25 +69,57 @@
 				margin-bottom: 20px;
 			}
 
-			nav.nav-tabs > li:active > a{
-				font-size: large;
+			.nav.nav-pills > li.active>a {
+				background-color: #48282F;
 			}
-			@media (max-width: 767px) {
-			#btech,#mtech,#phd {
-				background : rgba(255,255,255,.9);
-				margin : 10px 10px 10px 10px;
+			li.active>a {
+				font-color : white;
 			}
-			.tab-content {
-				background-attachment: fixed;
-				background-repeat: repeat-y;
+
+			.panel{
+				box-shadow: 0 1px 1px rgba(200, 51, 51, 0);
 			}
-			.subhead {
-				font-size: 30px;
+			.panel-group.panel, .panel.panel-default {
+				background-color: transparent;
+				border:1px solid #f6ddbf;
+				border-bottom-left-radius: 30px;
 			}
-			.content{
-				font-size: 20px;
+
+			.panel-default > .panel-heading{
+				background-color: transparent;
+				box-shadow: 0px 8px 10px -8px #48282f;
+				border-bottom-left-radius: 30px;
+				border: transparent;
+				padding-bottom: 5px;
 			}
-		}
+
+			.panel-default > .panel-heading + .panel-collapse > .panel-body{
+				border:transparent;
+			}
+			p{
+				padding-left: 16px;
+				font-size : 17px; 
+				padding : 0 20px 0 20px;
+			}
+
+			@media (max-width: 700px) {
+				#btech,#mtech,#phd {
+					margin : 50px 10px 10px 10px;
+				}
+				.subhead{
+					font-size: 20px;
+				}
+				p{
+					font-size: 15px;
+				}
+				.panel-title{
+					font-size: 18px;
+				}
+
+				.nav-pills > li {
+					width : 100%;
+				}
+			}
 			</style>
 		</head>
 		<body style="background:#F8F7DF;">
@@ -136,157 +183,160 @@
 			<!-- Content -->
 			<main>
 				
-				<div class="container" style="text-align: center">
-					<ul class="nav nav-tabs">
-						<li class="active" style="width:33%"><a data-toggle="tab" href="#btech"><font color="#48282f">Undergraduate</font></a></li>
-						<li style="width:33%"><a data-toggle="tab" href="#mtech"><font color="#48282f">Postgraduate</font></a></li>
-						<li style="width:33%"><a data-toggle="tab" href="#phd"><font color="#48282f">Doctoral</font></a></li>
+				<div class="container" style="text-align: center; margin-top: 20px;">
+					<div id="programmes-menu">
+					<ul class="nav nav-pills" id="prog-ul">
+						<li class="active" style="font-color: red"><a data-toggle="pill" href="#btech">Undergraduate</a></li>
+						<li style="font-color: red"><a data-toggle="pill" href="#mtech">Postgraduate</a></li>
+						<li style="font-color: red"><a data-toggle="pill" href="#phd">Doctoral</a></li>
 					</ul>
+				</div>
 
-					<div class="tab-content">
-						<div id="btech" class="tab-pane fade in active">
-							<h1 class="subhead"><b>B.Tech (Information Technology)</b></h1>
-							<div class="btech content"><p style="font-family : serif; font-size : 20px; padding : 0 20px 0 20px">The B.Tech. programme in Information Technology was the first program to be offered by the Department when it was established in the year 2000. It has since grown from strength to strength and is currently one of the top and most sought after disciplines at NITK Surathkal. The course currently has an average intake of 105 students per year. The programme is innovatively designed to cater to global and industry demands and offers a balanced coverage of foundation concepts and application oriented courses. Our students have consistently achieved excellent placements of nearly 100% each year and several have been accepted/are pursuing post graduate and doctoral studies at reputed National and International Universities.</p></div>
+				<div class="tab-content">
+					<div id="btech" class="tab-pane fade in active">
+						<div class="subhead">B.Tech (Information Technology)</div>
+						<div class="btech content"><p>The B.Tech. programme in Information Technology was the first program to be offered by the Department when it was established in the year 2000. It has since grown from strength to strength and is currently one of the top and most sought after disciplines at NITK Surathkal. The course currently has an average intake of 105 students per year. The programme is innovatively designed to cater to global and industry demands and offers a balanced coverage of foundation concepts and application oriented courses. Our students have consistently achieved excellent placements of nearly 100% each year and several have been accepted/are pursuing post graduate and doctoral studies at reputed National and International Universities.</p></div>
 
-							<hr>
-							<div class="panel-group panel" id="aboutbtech">
-								<div class="panel panel-default">						    
-									<div class="panel-heading" role="tab" id="headingOne" style="background-color : RGBA(16, 240, 0, 0.7); height:50px">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutbtech" href="#collapseOne">
-												<u style="font-family : serif; font-size : 20px; font-color: #48248f"><b>Programme Educational Objectives</b></u>
-											</a>
-										</h4>
-									</div>
+						
+						<div class="panel-group panel" id="aboutbtech">
+							<div class="panel panel-default">						    
+								<div class="panel-heading" role="tab" id="headingOne" style=" height:50px">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutbtech" href="#collapseOne">
+											<div>Programme Educational Objectives</div>
+										</a>
+									</h4>
+								</div>
 
-									<div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
-										<div class="panel-body">
-											<ul style="background-color: rgba(255,255,255,0.8)" >
-												<li>Objective 1</li>
-												<li>Objective 2</li>	
-												<li>Objective 3</li>
-											</ul>
-										</div>
+								<div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+									<div class="panel-body">
+										<ul style="font-size:17px">
+											<li>Objective 1</li>
+											<li>Objective 2</li>	
+											<li>Objective 3</li>
+										</ul>
 									</div>
 								</div>
-								<hr>
-								<div class="panel panel-default">						    
-									<div class="panel-heading" role="tab" id="headingTwo" style="background-color : RGBA(16, 240, 0, 0.7); height:50px">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutbtech" href="#collapseTwo">
-												<u style="font-family : serif; font-size : 20px"><b>Programme Outcomes</b></u>
-											</a>
-										</h4>
-									</div>
+							</div>
+							
+							<div class="panel panel-default">						    
+								<div class="panel-heading" role="tab" id="headingTwo" style=" height:50px">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutbtech" href="#collapseTwo">
+											<div>Programme Outcomes</div>
+										</a>
+									</h4>
+								</div>
 
-									<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
-										<div class="panel-body">
-											<ul>
-												<li>Outcome</li>
-												<li>Outcome</li>	
-												<li>Outcome</li>
-											</ul>
-										</div>
+								<div id="collapseTwo" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo">
+									<div class="panel-body">
+										<ul style="font-size:17px">
+											<li>Outcome</li>
+											<li>Outcome</li>	
+											<li>Outcome</li>
+										</ul>
 									</div>
 								</div>
 							</div>
 						</div>
-						<div id="mtech" class="tab-pane fade">
-							<h1 class="subhead"><b>M.Tech (Information Technology)</b></h1>
-							<div class="mtech content"><p style="font-family : serif; font-size : 20px; padding : 0 20px 0 20px">The PG course in IT was introduced in 2010 as part of the Decenary celebrations of the Department of Information Technology. It is aimed at producing quality engineers/ researchers to cater to the ever increasing demand for highly trained IT professionals. Students are exposed to cutting edge technologies in emerging areas of IT with hands on experience in trend setting areas such as Information & Network Security, Distributed Computing and Human Computer Interaction. 
-							</p></div>
-							<hr>	
-							<div class="panel-group panel" id="aboutmtech">
-								<div class="panel panel-default">						    
-									<div class="panel-heading" role="tab" id="headingOnes" style="background-color : RGBA(16, 240, 0, 0.7); height:50px">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutmtech" href="#collapseOnes">
-												<u style="font-family : serif; font-size : 20px; font-color: #48248f"><b>M.Tech (in IT by Research)</b></u>
-											</a>
-										</h4>
-									</div>
+					</div>
+					<div id="mtech" class="tab-pane fade">
+						<div  class="subhead">M.Tech (Information Technology)</div>
+						<div class="mtech content"><p style="font-size : 17px; padding : 0 20px 0 20px">The PG course in IT was introduced in 2010 as part of the Decenary celebrations of the Department of Information Technology. It is aimed at producing quality engineers/ researchers to cater to the ever increasing demand for highly trained IT professionals. Students are exposed to cutting edge technologies in emerging areas of IT with hands on experience in trend setting areas such as Information & Network Security, Distributed Computing and Human Computer Interaction. 
+						</p></div>
+							
+						<div class="panel-group panel" id="aboutmtech">
+							<div class="panel panel-default">						    
+								<div class="panel-heading" role="tab" id="headingOnes" style=" height:50px">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutmtech" href="#collapseOnes">
+											<div>M.Tech (in IT by Research)</div>
+										</a>
+									</h4>
+								</div>
 
-									<div id="collapseOnes" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOnes">
-										<div class="panel-body">
-											<p style="font-family : serif">	This programme is aimed at students interested in exposure to serious research in various fields of Information Technology. It emphasizes multidisciplinary and rigorous learning and research work. Faculty members with vast research experience will be involved in the teaching and research process. Exposure to exciting and emerging technologies and active involvement of faculty members in research projects are the best features of this programme, providing students a distinctive opportunity to undertake research work and innovation. The number of seats is flexible but subject to the availability of research funding.
-											</p>
-										</div>
+								<div id="collapseOnes" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOnes">
+									<div class="panel-body">
+										<p style="font-size:17px">	This programme is aimed at students interested in exposure to serious research in various fields of Information Technology. It emphasizes multidisciplinary and rigorous learning and research work. Faculty members with vast research experience will be involved in the teaching and research process. Exposure to exciting and emerging technologies and active involvement of faculty members in research projects are the best features of this programme, providing students a distinctive opportunity to undertake research work and innovation. The number of seats is flexible but subject to the availability of research funding.
+										</p>
 									</div>
 								</div>
-								
-								<div class="panel panel-default">						    
-									<div class="panel-heading" role="tab" id="headingTwos" style="background-color : RGBA(16, 240, 0, 0.7); height:50px">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutmtech" href="#collapseTwos">
-												<u style="font-family : serif; font-size : 20px"><b>M.Tech (Research) Degrees Awarded</b></u>
-											</a>
-										</h4>
-									</div>
+							</div>
 
-									<div id="collapseTwos" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwos">
-										<div class="panel-body">
-											<ul style="text-align : left; font-family: serif">
-												<li>    Srinivas Balasubramaniam under the guidance of Prof. G. Ram Mohana Reddy and Dr. Prakash Raghavendra,<br> AMD India<br>Title of Thesis:  HAMP - A Highly Abstracted and Modular Programming Paradigm for Expressing Parallel Programs<br>
-												</li>
-												<li>Malhar Anjaria under the guidance of Prof. G. Ram Mohana Reddy<br>Title of Thesis: Efficient Prediction of Events Using Social Network Data with Novel Sentiment Analysis<br></li>	
-												<li>Subhayan Mukherjee under the guidance of Prof. G. Ram Mohana Reddy<br>Title of Thesis: Accelerated Framework for Selective Blurring with Occlusion Handling Using Depth Maps<br></li>
-											</ul>
-										</div>
+							<div class="panel panel-default">						    
+								<div class="panel-heading" role="tab" id="headingTwos" style=" height:50px">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutmtech" href="#collapseTwos">
+											<div>M.Tech (Research) Degrees Awarded</div>
+										</a>
+									</h4>
+								</div>
+
+								<div id="collapseTwos" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwos">
+									<div class="panel-body">
+										<ul style="text-align : left; font-size: 17px">
+											<li>    Srinivas Balasubramaniam under the guidance of Prof. G. Ram Mohana Reddy and Dr. Prakash Raghavendra,<br> AMD India<br>Title of Thesis:  HAMP - A Highly Abstracted and Modular Programming Paradigm for Expressing Parallel Programs<br>
+											</li>
+											<li>Malhar Anjaria under the guidance of Prof. G. Ram Mohana Reddy<br>Title of Thesis: Efficient Prediction of Events Using Social Network Data with Novel Sentiment Analysis<br></li>	
+											<li>Subhayan Mukherjee under the guidance of Prof. G. Ram Mohana Reddy<br>Title of Thesis: Accelerated Framework for Selective Blurring with Occlusion Handling Using Depth Maps<br></li>
+										</ul>
 									</div>
 								</div>
-							</div>			
-						</div>
-						<div id="phd" class="tab-pane fade">
-							<h1 class="subhead"><b>Ph.D (Information Technology)</b></h1>
-							<div class="phd content"><p style="font-family : serif; font-size : 20px; padding : 0 20px 0 20px">The Department has been very active in research and development activities in various areas of Information Technology. We offer a Ph.D Program in Information Technology, both on full-time and part-time basis. Currently, the department has 20 Research Scholars pursuing Ph.D in different emerging areas of IT.</p></div>
-							<hr>
-							<div class="panel-group panel" id="aboutphd">
-								<div class="panel panel-default">						    
-									<div class="panel-heading" role="tab" id="headingOne3" style="background-color : RGBA(16, 240, 0, 0.7); height:50px">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutphd" href="#collapseOne3">
-												<u style="font-family : serif; font-size : 20px; font-color: #48248f"><b>Ph.D degrees awarded</b></u>
-											</a>
-										</h4>
-									</div>
+							</div>
+						</div>			
+					</div>
+					<div id="phd" class="tab-pane fade">
+						<div class="subhead">Ph.D (Information Technology)</div>
+						<div class="phd content"><p>The Department has been very active in research and development activities in various areas of Information Technology. We offer a Ph.D Program in Information Technology, both on full-time and part-time basis. Currently, the department has 20 Research Scholars pursuing Ph.D in different emerging areas of IT.</p></div>
+						
 
-									<div id="collapseOne3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne3">
-										<div class="panel-body">
-											13
-										</div>
+						<div class="panel-group panel" id="aboutphd">
+							<div class="panel panel-default">						    
+								<div class="panel-heading" role="tab" id="headingOne3" style=" height:50px">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutphd" href="#collapseOne3">
+											<div>Ph.D degrees awarded</div>
+										</a>
+									</h4>
+								</div>
+
+								<div id="collapseOne3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne3">
+									<div class="panel-body">
+										13
 									</div>
 								</div>
-								
-								<div class="panel panel-default">						    
-									<div class="panel-heading" role="tab" id="headingTwo3" style="background-color : RGBA(16, 240, 0, 0.7); height:50px">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutphd" href="#collapseTwo3">
-												<u style="font-family : serif; font-size : 20px"><b>Ph.D work in progress</b></u>
-											</a>
-										</h4>
-									</div>
+							</div>
 
-									<div id="collapseTwo3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo3">
-										<div class="panel-body">
-											20
-										</div>
+							<div class="panel panel-default">						    
+								<div class="panel-heading" role="tab" id="headingTwo3" style=" height:50px">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutphd" href="#collapseTwo3">
+											<div>Ph.D work in progress</div>
+										</a>
+									</h4>
+								</div>
+
+								<div id="collapseTwo3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingTwo3">
+									<div class="panel-body">
+										20
 									</div>
 								</div>
-								<div class="panel panel-default">						    
-									<div class="panel-heading" role="tab" id="headingThree3" style="background-color : RGBA(16, 240, 0, 0.7); height:50px">
-										<h4 class="panel-title">
-											<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutphd" href="#collapseThree3">
-												<u style="font-family : serif; font-size : 20px"><b>Current research interests</b></u>
-											</a>
-										</h4>
-									</div>
+							</div>
+							<div class="panel panel-default">						    
+								<div class="panel-heading" role="tab" id="headingThree3" style="; height:50px">
+									<h4 class="panel-title">
+										<a class="collapsed" role="button" data-toggle="collapse" data-parent="#aboutphd" href="#collapseThree3">
+											<div>Current research interests</div>
+										</a>
+									</h4>
+								</div>
 
-									<div id="collapseThree3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree3">
-										<div class="panel-body">
-											<ul  class="interests" style="list-style-type:disc">
-												<li>Affective Computing 1</li>
-												<li>Affective Computing 2</li>
-												<li>Affective Computing 3</ li>
+								<div id="collapseThree3" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingThree3">
+									<div class="panel-body">
+										<ul  class="interests" style="list-style-type:disc; font-size: 17px">
+											<li>Affective Computing 1</li>
+											<li>Affective Computing 2</li>
+											<li>Affective Computing 3</li>
 												<li>Affective Computing 4</li>
 												<li>Affective Computing 5</li>
 												<li>Affective Computing 6</li>
